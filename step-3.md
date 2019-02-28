@@ -56,8 +56,73 @@ In Ember most things that we work with revolve around objects though. An object 
 
 The object allows us to store related information together one single piece of data. Each property can be updated as follows:
 
-
+<!-- TODO: You need to describe variables at some point before -->
 ```js
-{ name: ... }
+var myobject = {
+  name: 'Marie Curie',
+  job: 'Physicist',
+  birthyear: 1867 };
+
+myobject.name = 'Marie Skłodowska Curie';
+console.log(myobject);
+/*  This will log into your console the updated object:
+{  name: 'Marie Skłodowska Curie',
+  job: 'Physicist',
+  birthyear: 1867  };
+*/
 
 ```
+
+## What is an Ember Object?
+
+Objects in Ember are a specific type of object. They come with many different features that native JavaScript objects which we learned about in the previous section don't have. In the scope of this workshop we won't be able to cover the special things an EmberObject can do versus a normal object, but we want to take a look on how to create one and be able to recognize it later on in the course.
+
+Learning about the EmberObject is also important for knowing that almost everything we create in an Ember app is based on an EmberObject. We'll come back to that notion later during the course.
+
+You can create an EmberObject as follows:
+
+
+```
+import EmberObject from '@ember/object';
+
+let myobject = EmberObject.create({
+  title: 'Ada Lovelace',
+  birthyear: 1815,
+});
+
+```
+
+
+### Exercise: Creating and passing an EmberObject
+
+In this exercise we want to create a new EmberObject which can be used in the `about` Route which we created earlier. We will use the EmberObject to carry information that will be displayed on the about page.
+
+- Open the file `app/routes/about.js` in your text editor
+- import the EmberObject from the `@ember/object` package as seen above in the previous example. You can put the import statement at the very top of the file
+- inside of the `model() {}`, create the EmberObject with your application's name (you can choose one) as the object's `name` property and a descriptive text as the object's `text` property
+- indicate that you'd like to pass the object down to your route's template by using the `return` keyword. Example on using `return` with an example object `myobject`:
+
+```
+model() {
+  return myobject;
+}
+
+```
+
+- Revisit your about page in your browser by visiting `http://localhost:4200/about` and see what has now changed
+
+
+## How are routes and templates connected?
+
+Earlier we created a new about route using the Ember CLI by typing `ember generate route about` into the terminal. This gave us two files, namely
+
+- app/routes/about.js
+- app/templates/about.hbs
+
+In this part we want to take a look how templates and route files are interconnected. You already returned data from your route file to a template in the previous exercise. But how is it displayed there?
+
+### Exercise: Update the sub title of the about page
+
+- Open app/templates/about.hbs and find all the properties of your `model` that are displayed
+- Go back into app/routes/about.js and add the missing property to the object returned from `model() {}`
+- What happens in your application's `about` page in your browser?
