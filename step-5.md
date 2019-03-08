@@ -78,7 +78,7 @@ An action can be bound to any element or a component. For e.g. an ready-to-use i
 Anytime the user types into the input (which will trigger a `key-up` event) the action `myFunction` is called.
 
 
-### Exercise: Create an action in the List Filter Component
+### Exercise: Create an action in the list-filter component
 
 - open your `app/components/list-filter.js` file and add an action
 - Update the action definition for the `handleFilterEntry` action by filling it in with the following instruction:

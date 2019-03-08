@@ -24,6 +24,8 @@ Instead, we will use a **tool** that is pre-installed for us in any browser to w
 
 ![Console Demo 1.a](./assets/images/console_demo-1a.png)
 
+- Type into the window right next to the small arrow `console.log("Hello World!")`. What happens now?
+
 #### Exercise: Run JavaScript from a file
 
 - Open your text editor
@@ -34,17 +36,42 @@ Instead, we will use a **tool** that is pre-installed for us in any browser to w
 - Reload the page in the browser. What do you see?
 - Trouble with the exercise? Open `./assets/demo-1b-solution.html` in your editor and browser
 
+## What are variables?
 
-<!-- JavaScript Primer
+Variables in JavaScript provide a way to **store** and to **retrieve** words, numbers and other more complex things in your program.
+A variable acts as a container for these so-called _values_. You can _declare_ a variable and fill it in with a value by using a dedicated keyword and the _assign_ operator `=`.
 
-- What is JavaScript? A language → Demo of console in Chrome dev tools / alert, then html file with JavaScript file with the same code
-- Variables. What are they and what do they do? Variable assignment syntax, var / const / let
-- console.log + alert. Printing values.
-- Exercise: Add an assignment to a call to alert / console.log (Example Page with script tag)
-- Exercise: Use var (historic). Use const. Use let. String concatenation example.
-- <break here? move to components in Ember app>
-- Conditions. What is a condition? How to use if. How to use if / else. Templating if and JS if
-- Exercise: Print a statement using if / else.
-- Objects. What are objects? What are they used for? How do property assignments work?
-- Exercise: Create an object. Update properties of an object and print it.
-- Functions? What is this used for and how do you return a value from a function? -->
+In the scope of this workshop we will learn about one particular variable keyword called `let`. If you continue to learn more about JavaScript after this workshop, you might encounter other variable keywords as well, but for now, we can do everything we want to achieve in this course by focussing on `let` only.
+
+If you, for example, wanted to create a variable that stores your favorite color, can write the following:
+
+```js
+let color = 'purple';
+```
+
+This line does 3 things:
+
+- It creates a new variable, a container for any word or number you want to fill into
+- It fills in the variable `color` with the word `purple`
+- It allows you to retrieve the word `purple` any time again in your code by reading from the variable `color`
+
+You can choose almost any word that comes to your mind, when naming a variable. It's also possible to include numbers in your variable name. And after a variable has been declared for the first time, you can update its value anytime further down in your code as follows:
+
+```js
+color = 'blue';
+```
+
+When **updating** an **already declared** variable, you **must not** use the variable keyword. The variable keyword is only used when you declare a new variable for the first time.
+
+Besides that, we also see that each code instruction - a so-called _statement_ - ends with a semi-colon `;`. It acts as like a colon after a phrase indicating to the browser that a full code instruction ends right there.
+
+How can you retrieve the value of a particular variable? We will see how to do so in the next exercise.
+
+#### Exercise: Read and write to variables
+
+- Open your text editor
+- Open the file `./assets/demo-1c.html` in your text editor
+- Open the file in your browser as done in the previous exercise
+- Investigate the current `alert()` statement. What do you see?
+- Find out how to make your page alert the phrase `I learn all day`
+- Make your program alert `I learn all day` first and then alert `I program all day` second by using only one variable in your program

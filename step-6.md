@@ -9,7 +9,7 @@ ember install ember-simple-auth
 This would automatically add the Ember addon to our application and preconfigure it. Depending on the addon we can use it in different ways. In the following example, we're gonna install and use and Ember addon to add a map view to our Ember app.
 
 
-### Exercise: Installing Ember Addons - Ember CLI Tutorial Style
+### Exercise: Installing Ember addons - Ember CLI Tutorial Style
 
 First let's add some styling to our Ember application. You can install the addon `ember-cli-tutorial-style` to make your app shine in an instant
 
@@ -18,7 +18,7 @@ First let's add some styling to our Ember application. You can install the addon
 - restart the server by typing `ember server` and hitting enter
 - Revisit your Ember app in your browser. What do you see?
 
-### Exercise: Installing Ember Addons - Ember Leaflet
+### Exercise: Installing Ember addons - Ember Leaflet
 
 To be able to display a map in our rentals page we can add an addon called Ember Leaflet
 

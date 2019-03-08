@@ -39,10 +39,9 @@ To create routes that can be accessed via certain urls, we use the Ember CLI and
 - Save the file `app/templates/about.hbs` and go back to your app in the browser. What changed?
 
 
-
 ## What are JavaScript objects?
 
-Objects in JavaScript are a special kind of data type. Each data type in JavaScript comes with its own characteristics in how you can store and access data. Data can come in many forms. E.g. the word 'tomster' in a JavaScript program can be a piece of data. If you wanted to use the word `tomster` in your JavaScript code, you'd need to do so using the `string` data type for example.
+Objects in JavaScript are a special kind of data type. Each data type in JavaScript comes with its own characteristics in how you can store and access data. Data can come in many forms. E.g. the word 'tomster' in a JavaScript program can be a piece of data. If you wanted to use the word `tomster` in your JavaScript code, you'd need to do so using the `string` data type for example. The number 42 is of the `Number` data type.
 
 
 In Ember most things that we work with revolve around objects though. An object is defined by having no, one or several properties, where each property has a specified value. An object can look for example like this:
@@ -54,18 +53,29 @@ In Ember most things that we work with revolve around objects though. An object 
   birthyear: 1867 }
 ```
 
-The object allows us to store related information together one single piece of data. Each property can be updated as follows:
+The object allows us to store related information together one single piece of data. Similarly to Strings (words) and Numbers (numbers), objects can also be stored via variables. We can e.g. save the object above with the variable `scientist` as follows:
 
-<!-- TODO: You need to describe variables at some point before -->
+
 ```js
-var myobject = {
+let scientist = {
+  name: 'Marie Curie',
+  job: 'Physicist',
+  birthyear: 1867
+};
+```
+
+
+An object and its properties can be updated as follows:
+
+```js
+let scientist = {
   name: 'Marie Curie',
   job: 'Physicist',
   birthyear: 1867 };
 
-myobject.name = 'Marie Skłodowska Curie';
-console.log(myobject);
-/*  This will log into your console the updated object:
+scientist.name = 'Marie Skłodowska Curie';
+console.log(scientist);
+/*  This will log to your console the updated object:
 {  name: 'Marie Skłodowska Curie',
   job: 'Physicist',
   birthyear: 1867  };
@@ -85,7 +95,7 @@ You can create an EmberObject as follows:
 ```
 import EmberObject from '@ember/object';
 
-let myobject = EmberObject.create({
+let programmer = EmberObject.create({
   title: 'Ada Lovelace',
   birthyear: 1815,
 });
@@ -109,7 +119,7 @@ model() {
 
 ```
 
-- Revisit your about page in your browser by visiting `http://localhost:4200/about` and see what has now changed
+- Revisit your about page in your browser by visiting `http://localhost:4200/about` and see what has changed now
 
 
 ## How are routes and templates connected?

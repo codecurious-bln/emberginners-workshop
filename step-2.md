@@ -10,7 +10,7 @@ The app we'll building today will in the end look something like this:
 
 ![Super Rentals App](./assets/images/super_rentals_demo.png)
 
-In this section we'll learn some of the basic principles of Ember and how we can use an important tool - the Ember CLI (CLI stands for **C**ommand **L**ine **T** ool) - to make building our application really easy.
+In this section we'll learn some of the basic principles of Ember and how we can use an important tool - the Ember CLI (CLI stands for **C**ommand **L**ine **I** nterface) - to make building our application really easy.
 
 <!--  Ember Tutorial: Super Rentals
 
