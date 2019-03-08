@@ -29,7 +29,7 @@ In the following section you will learn about the [Ember CLI](https://cli.emberj
 
 - Prerequisites: This step requires the Ember CLI to already be installed on your computer. You can check if it's installed by typing into your terminal: `ember -v`. If you see `ember: Command not found`, it means that Ember CLI is not installed on your computer. Please review the [installation instructions from the pre-installation step](#TODO: INSERT LINK TO PREINSTALL PARTY GUIDELINES)
 - Open your terminal
-- Type in `cd ~/Desktop/emberginners-workshop` and hit enter to put yourself into the correct folder to create your app in
+- Type in `cd ~/Desktop/emberginners-workshop` and hit enter to go into the correct folder to create your app in
 - Type in `ember new super-rentals` and hit enter and investigate the console output. Wait until no new messages show up in your terminal
 
 ![Example Generate App](./assets/images/ember_demo-2a.gif)
