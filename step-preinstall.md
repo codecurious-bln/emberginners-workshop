@@ -69,23 +69,86 @@ Several browsers provide us with tools that help us to develop our web applicati
 
 ### Getting familiar with the terminal
 
-<!-- TODO: Add full instructions for folder navigation, copy+pasting commands, stopping running tasks -->
-— What do you use the terminal for? Which terminologies are there for the terminal?
-— How do you open / close / stop a terminal?
-— How do you copy-paste commands?
-— What does the output mean? → Demo
+A terminal is a program that allows you to run, stop and interact with programs on your computer using text-based commands. Other terms that are used to describe a terminal, are "console", "shell" or "command line".
+
+#### Opening your terminal
+
+You can open your terminal as follows:
+
+Mac: Hit Command + Space key and type "Terminal" and open it hitting enter
+Linux (e.g. Ubuntu): Hit Control + Alt + T
+Windows: Install and open the [Windows Subsystem for Linux](https://superuser.com/questions/608106/how-can-i-use-a-bash-like-shell-on-windows)
+
+#### Starting + Stopping Processes
+
+Each terminal window or terminal tab will open with a new line mentioning your username on your computer, your computer's name followed by an empty line:
+
+![Termimal Window](./assets/images/terminal.png)
 
 
-#### Exercise: Navigate across directories
+Any program that you run via the terminal can be stopped and re-run. To start a program or process you need to type in the respective command and hit enter, to stop a command use Ctrl + C.
 
-- Exercise: Create and Change Directories
-- ? Figure out, if there are admin permissions to figure out for Windows users
+Throughout this workshop we will mention several commands that you need to run in the terminal.
+
+##### Exercise: Start and Stop a Process
+
+There is a program you can run to "knock at the door" of a website and check if it's currently online. The program is called **ping**. This program has a simple terminal command that you can use to run it, also called `ping` and it can be run in your terminal window by typing the following:
+
+```bash
+ping replace-this-with-the-url-of-a-website
+```
+
+If we for example wanted to check the current status of the EmberJS website, we could run:
+
+```bash
+ping emberjs.com
+```
+
+- "ping" a website of your choice via your terminal using the `ping` command
+- What do you see in the terminal window?
+- Stop the process by using the control mentioned earlier in this section
+
+The `ping` command takes in a url which can be different anytime the program is run and is free to user choice. A text or number that is used in combination with a command is called a **parameter**. During the workshop we will learn about more commands that take in parameters for running their respective program.
+
+##### Exercise: Navigate across directories
+
+Your terminal allows you to navigate through the folders of your computer and create new directories, too. This can be really handy when managing the code files you'll be creating, editing and saving in this workshop.
+
+If you want to create a new folder, you can run the command for **m** a **k** ing **dir** ectories, followed by the name you'd like to have for that particular folder as a parameter:
+
+
+```
+mkdir my-new-folder
+```
+
+This will create an empty folder right where you are in your directory structure. To see what's inside the folder, you can navigate into it and list its content. To do so, you can run the command for navigation as follows:
+
+```
+cd my-new-folder
+```
+
+And to list the content of the folder, you can run:
+
+```
+ls
+```
+
+- Create a new folder called `ember-workshop` with terminal commands
+- Navigate into your newly created folder using the terminal
+- List the folder's content. What do you see in your shell window?
+
+
+Did you also know that you can copy-paste any of the commands from this tutorial into your terminal window? Hit Control + C (Windows + Linux) or Cmd + C (Mac) while highlighting the command to copy it and use Control + V (or Cmd + V on Mac) while focussing your terminal window to paste it. This is especially useful for long commands that might take a while to type out.
 
 
 ### Installation (Part 2)
 
-- Exercise: Getting to know the terminal (Windows, Mac, Linux)
-- Exercise: Install Git
-- Exercise: Install Node
-- Exercise: Install Ember CLI
-- Reference: https://guides.emberjs.com/release/getting-started/
+In this part of the installation process, we'll install several tools that are needed for developing our JavaScript application tomorrow. To follow the workshop you will need to install
+
+- Git - a tool for downloading code examples for this workshop
+- Node - a JavaScript runtime that comes together with `npm` which helps us to install useful libraries for the application we're building
+- Ember CLI - the command line tool we'll be using to run and manage our Ember app
+
+You can install all you need using the [Getting Started Guide for Your Ember Installation](https://guides.emberjs.com/release/getting-started/).
+
+Feeling stuck and don't know how to continue your installation? Feel free to ask a mentor and/or take a look at what your neighbours are doing!
