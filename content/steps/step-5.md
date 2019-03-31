@@ -1,3 +1,8 @@
+---
+title: Step 5
+order: 5
+---
+
 # What are actions?
 
 Actions are ways to make interactions of a user with your application trigger changes in your application's UI and they're especially useful for Components.

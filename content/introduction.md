@@ -1,6 +1,6 @@
-# Pre-Install Party
-
-## Welcome!
+---
+title: Pre-Install Party
+---
 
 This is a workshop to teach those who have never programmed (or at least never programmed with JavaScript - the programming language of the web) before a few basics in web and JavaScript development. This also includes a short introduction into the JavaScript framework EmberJS which we will use to build our very first web application.
 
@@ -23,19 +23,19 @@ With JavaScript as one of the main languages of the web, we can - once we know h
 
 Ember is a specific **JavaScript framework** that allows us to build fast single-page applications. As a framework it provides us with a way to write JavaScript code to create our app, but it also provides us with many useful tools to do so. We will learn more about what these tools are about at the workshop.
 
-![Tomster & Zoey Mascots](./assets/images/mascots.png)
+![Tomster & Zoey Mascots](/images/mascots.png)
 
 If you're curious about what you can build with Ember, check out a few of the following websites that are built using it:
 
 
 - Showcase 1: [Linkedin.com](https://www.linkedin.com/)
-![Linkedin EmberJS Showcase](./assets/images/linkedin.png)
+![Linkedin EmberJS Showcase](/images/linkedin.png)
 
 - Showcase 2: [Heroku Dashboard](https://dashboard.heroku.com/)
-![Heroku EmberJS Showcase](./assets/images/heroku.png)
+![Heroku EmberJS Showcase](/images/heroku.png)
 
 - Showcase 3: [Playstation Store](https://store.playstation.com/de-de/home/games)
-![Playstation EmberJS Showcase](./assets/images/ps.png)
+![Playstation EmberJS Showcase](/images/ps.png)
 
 
 ## How does this workshop work?
@@ -83,7 +83,7 @@ Windows: Install and open the [Windows Subsystem for Linux](https://superuser.co
 
 Each terminal window or terminal tab will open with a new line mentioning your username on your computer, your computer's name followed by an empty line:
 
-![Termimal Window](./assets/images/terminal.png)
+![Termimal Window](/images/terminal.png)
 
 
 Any program that you run via the terminal can be stopped and re-run. To start a program or process you need to type in the respective command and hit enter, to stop a command use Ctrl + C.

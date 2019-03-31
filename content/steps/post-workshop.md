@@ -1,3 +1,8 @@
+---
+title: Post-Workshop
+order: 999
+---
+
 # That's it, folks!
 
 This is it! You've just built your very first JavaScript application using EmberJS - congratulations! ✨
