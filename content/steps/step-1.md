@@ -1,3 +1,8 @@
+---
+title: Step 1
+order: 1
+---
+
 # An Intro to JavaScript
 
 ## What is JavaScript?
@@ -22,19 +27,19 @@ Instead, we will use a **tool** that is pre-installed for us in any browser to w
 -- On Linux (e.g. Ubuntu, Fedora): F12 or Control+Shift+I
 - Type into the window right next to the small arrow: `alert("Hello World!")`
 
-![Console Demo 1.a](./assets/images/console_demo-1a.png)
+![Console Demo 1.a](/images/console_demo-1a.png)
 
 - Type into the window right next to the small arrow `console.log("Hello World!")`. What happens now?
 
 #### Exercise: Run JavaScript from a file
 
 - Open your text editor
-- Open the file `./assets/demo-1b.html` in your text editor (TODO: lol, no one knows how file directories work, right)
+- Open the file `/demo-1b.html` in your text editor (TODO: lol, no one knows how file directories work, right)
 - Open the file in your browser (e.g. double-click on it in your file directory or in your editor menu)
 - Investigate the `<script type="text/javascript"></script>` section
 - Fill in a snippet of JavaScript code from the previous exercise into the snippet below the `// comment`
 - Reload the page in the browser. What do you see?
-- Trouble with the exercise? Open `./assets/demo-1b-solution.html` in your editor and browser
+- Trouble with the exercise? Open `/demo-1b-solution.html` in your editor and browser
 
 ## What are variables?
 
@@ -70,7 +75,7 @@ How can you retrieve the value of a particular variable? We will see how to do s
 #### Exercise: Read and write to variables
 
 - Open your text editor
-- Open the file `./assets/demo-1c.html` in your text editor
+- Open the file `/demo-1c.html` in your text editor
 - Open the file in your browser as done in the previous exercise
 - Investigate the current `alert()` statement. What do you see?
 - Find out how to make your page alert the phrase `I learn all day`

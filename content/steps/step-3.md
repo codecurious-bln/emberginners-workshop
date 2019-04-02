@@ -1,3 +1,8 @@
+---
+title: Step 3
+order: 3
+---
+
 # An Intro to Routing in Ember
 
 ## What is routing?

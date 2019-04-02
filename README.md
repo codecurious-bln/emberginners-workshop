@@ -2,20 +2,14 @@
 
 Workshop materials for a day-and-a-half JavaScript beginners workshop teaching JS fundamentals and the basics of building Ember applications.
 
-## Installation
-
-- Install `reveal-md` for serving the content
-```
-npm install -g reveal-md
-```
-
 ## How to run
 
-- Serve the presentation using `reveal-md`
+This is essentially a standard Ember app that is built using the Empress project [Training Buddy](https://github.com/empress/training-buddy). Running this locally is the same as running any standard Ember app:
+
 ```
 cd emberginners-workshop
-reveal-md ./steps-all.md
-
+npm i
+npm start
 ```
 
 ## License

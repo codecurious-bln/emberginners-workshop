@@ -1,3 +1,8 @@
+---
+title: Step 4
+order: 4
+---
+
 # An Intro to Components in Ember
 
 ## What is a Component?

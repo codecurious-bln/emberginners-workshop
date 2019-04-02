@@ -1,3 +1,8 @@
+---
+title: Step 2
+order: 2
+---
+
 # An Intro to Ember
 
 ## What is Ember?
@@ -8,7 +13,7 @@ The entire Ember framework is written in JavaScript and you can use JavaScript t
 
 The app we'll building today will in the end look something like this:
 
-![Super Rentals App](./assets/images/super_rentals_demo.png)
+![Super Rentals App](/images/super_rentals_demo.png)
 
 In this section we'll learn some of the basic principles of Ember and how we can use an important tool - the Ember CLI (CLI stands for **C**ommand **L**ine **I** nterface) - to make building our application really easy.
 
@@ -32,4 +37,4 @@ In the following section you will learn about the [Ember CLI](https://cli.emberj
 - Type in `cd ~/Desktop/emberginners-workshop` and hit enter to go into the correct folder to create your app in
 - Type in `ember new super-rentals` and hit enter and investigate the console output. Wait until no new messages show up in your terminal
 
-![Example Generate App](./assets/images/ember_demo-2a.gif)
+![Example Generate App](/images/ember_demo-2a.gif)

@@ -1,3 +1,8 @@
+---
+title: Step 6
+order: 6
+---
+
 # What are Addons?
 
 Ember addons are plugins for your Ember app that are created and maintained by the community and which provide you with free to use functionality for your app, including new themes, components, functions and much, much more. You can install any Ember addon that you can find on [Ember Observer](https://emberobserver.com/) by using the `ember install` command. If we, for example, wanted to install the popular Ember addon `ember-simple-auth`, we could type into our terminal while in our app directory
