@@ -75,9 +75,9 @@ A terminal is a program that allows you to run, stop and interact with programs 
 
 You can open your terminal as follows:
 
-Mac: Hit Command + Space key and type "Terminal" and open it hitting enter
-Linux (e.g. Ubuntu): Hit Control + Alt + T
-Windows: Install and open the [Windows Subsystem for Linux](https://superuser.com/questions/608106/how-can-i-use-a-bash-like-shell-on-windows)
+* Mac: Hit Command + Space key and type "Terminal" and open it hitting enter
+* Linux (e.g. Ubuntu): Hit Control + Alt + T
+* Windows: Install and open the [Windows Subsystem for Linux for Windows 10](https://superuser.com/questions/608106/how-can-i-use-a-bash-like-shell-on-windows) or the [Cygwin tool set](https://www.cygwin.com/)
 
 #### Starting + Stopping Processes
 
