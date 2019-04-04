@@ -17,7 +17,7 @@ In the following section you will learn more about how you can make JavaScript c
 In the following section we will see how we can run JavaScript code directly in our browser. We will not require any text editor as such and we won't need to create any JavaScript files beforehand.
 Instead, we will use a **tool** that is pre-installed for us in any browser to write JavaScript and run it subsequently.
 
-#### Exercise: Showing a message box
+#### Exercise 1a: Showing a message box
 
 - Open your browser (Chrome and Firefox are the best options for following this workshop. You can download them here: [Chrome](https://www.google.com/chrome/) [Firefox](https://www.mozilla.org/firefox/))
 - Do one of the following:
@@ -31,7 +31,7 @@ Instead, we will use a **tool** that is pre-installed for us in any browser to w
 
 - Type into the window right next to the small arrow `console.log("Hello World!")`. What happens now?
 
-#### Exercise: Run JavaScript from a file
+#### Exercise 1b: Run JavaScript from a file
 
 - Open your text editor
 - Open the file `/demo-1b.html` in your text editor (TODO: lol, no one knows how file directories work, right)
@@ -72,7 +72,7 @@ Besides that, we also see that each code instruction - a so-called _statement_ -
 
 How can you retrieve the value of a particular variable? We will see how to do so in the next exercise.
 
-#### Exercise: Read and write to variables
+#### Exercise 1c: Read and write to variables
 
 - Open your text editor
 - Open the file `/demo-1c.html` in your text editor

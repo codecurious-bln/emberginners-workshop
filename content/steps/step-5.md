@@ -43,7 +43,7 @@ function myFunction(planet) {
 }
 ```
 
-### Exercise: Call a function
+### Exercise 5a: Call a function
 
 - Open your browser and its console as described in step 1
 - copy-pasta the function definition for myFunction into your console and hit enter
@@ -83,7 +83,7 @@ An action can be bound to any element or a component. For e.g. an ready-to-use i
 Anytime the user types into the input (which will trigger a `key-up` event) the action `myFunction` is called.
 
 
-### Exercise: Create an action in the list-filter component
+### Exercise 5b: Create an action in the list-filter component
 
 - open your `app/components/list-filter.js` file and add an action
 - Update the action definition for the `handleFilterEntry` action by filling it in with the following instruction:

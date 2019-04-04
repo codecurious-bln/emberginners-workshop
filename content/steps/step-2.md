@@ -30,7 +30,7 @@ In the following section you will learn about the [Ember CLI](https://cli.emberj
 - create a new app project to get started with your application
 - serve an EmberJS application from your own computer and see it running in your browser
 
-### Exercise: Generate an application
+### Exercise 2a: Generate an application
 
 - Prerequisites: This step requires the Ember CLI to already be installed on your computer. You can check if it's installed by typing into your terminal: `ember -v`. If you see `ember: Command not found`, it means that Ember CLI is not installed on your computer. Please review the [installation instructions from the pre-installation step](#TODO: INSERT LINK TO PREINSTALL PARTY GUIDELINES)
 - Open your terminal

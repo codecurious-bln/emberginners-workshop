@@ -14,7 +14,7 @@ Routing in web applications is important, since it enables users to share a spec
 To create routes that can be accessed via certain urls, we use the Ember CLI and more specifically its **generator** s. Using the `ember generate` command we can create all kinds of things in our application, including routes.
 
 
-### Exercise: Generate a new route in your Ember app
+### Exercise 3a: Generate a new route in your Ember app
 
 - Open your terminal
 - Type in `ember generate route about` and hit enter. Ember CLI will create several JavaScript files for you and edit some of them automatically for you. Check out the changes in these files in your text editor!
@@ -102,7 +102,7 @@ let programmer = EmberObject.create({
 ```
 
 
-### Exercise: Creating and passing an EmberObject
+### Exercise 3b: Creating and passing an EmberObject
 
 In this exercise we want to create a new EmberObject which can be used in the `about` Route which we created earlier. We will use the EmberObject to carry information that will be displayed on the about page.
 
@@ -130,7 +130,7 @@ Earlier we created a new about route using the Ember CLI by typing `ember genera
 
 In this part we want to take a look how templates and route files are interconnected. You already returned data from your route file to a template in the previous exercise. But how is it displayed there?
 
-### Exercise: Update the sub title of the about page
+### Exercise 3c: Update the sub title of the about page
 
 - Open app/templates/about.hbs and find all the properties of your `model` that are displayed
 - Go back into app/routes/about.js and add the missing property to the object returned from `model() {}`
