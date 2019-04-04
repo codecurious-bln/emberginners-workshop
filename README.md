@@ -16,4 +16,4 @@ npm start
 
 The Emberginners Workshop is developed by and © simplabs GmbH and
 contributors. It is released under the
-[CC BY-NC-SA 4.0 license](http://creativecommons.org/licenses/by-nc-sa/4.0/),
+[CC BY-NC-SA 4.0 license](http://creativecommons.org/licenses/by-nc-sa/4.0/).
