@@ -13,12 +13,6 @@ Routing in web applications is important, since it enables users to share a spec
 
 To create routes that can be accessed via certain urls, we use the Ember CLI and more specifically its **generator** s. Using the `ember generate` command we can create all kinds of things in our application, including routes.
 
-<!--
-- Exercise: Generate a Route (‘about’). What is a route? Investigate new page in browser.
-- Exercise: Copy-paste template into route. Observe server reload and page in the browser.
-- Primer: Objects in JavaScript. What are values and properties?
-- Ember Object Model. What is an EmberObject, how does it look like? -->
-
 
 ### Exercise: Generate a new route in your Ember app
 

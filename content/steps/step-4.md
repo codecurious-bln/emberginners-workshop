@@ -11,21 +11,38 @@ A component is an EmberObject that can be used to display interactive content in
 
 
 
-## How are Components used?
+## Where Can I Find Components?
 
-You can use a component by typing its name in double curly braces anywhere in the template. If e.g. we had a component called `my-component` in our application, we could add it to the about page as follows:
+Components that have been created as part of our application can be used in any page of our application. You can find components that are already part of this application by taking a look into the `app/components` folder. You might e.g. see the following:
+
+```
+- app
+  |-- components
+      |-- my-component.js
+```
+
+### Exercise: Find Out Which Components Are Part of Your App already
+
+As described in the previous section Ember applications keep components in one single place. Check out your own application for the presence of components using the terminal. Which components are there? Keep in mind that you can use `cd` to move between folders and `ls` to list the content of a folder.
+
+
+## How Can I Use Components?
+
+You can use a component by typing its name in [upper camel case](http://wiki.c2.com/?UpperCamelCase) anywhere in a page's template.
+We could add that component created in `app/components/my-component.js` to the about page as follows:
 
 
 ```
 <!-- app/templates/about.hbs -->
-{{my-component}}
+<MyComponent />
 ```
-This process is also described as _invoking a component_. Once the component is invoked, we can check back to the `about` page in our browser and see the component displayed right where we left it in the template - after the page's title, but before it's descriptive text.
+
+This process is also described as _invoking a component_. Once the component is invoked, we can check back to the `about` page in our browser and see the component displayed right where we left it in the template - after the page's title, but before its descriptive text.
 
 
 ### Exercise: Invoke the rental listing component
 
-Your demo application already comes with a ready-to-use component pre-equipped. Its name is `rental-listing`.
+As you saw earlier, your demo application already comes with a ready-to-use component pre-equipped. Its name is `rental-listing`.
 
 - Open your application's template for the `about` page
 - Invoke the `rental-listing` component on the `app/templates/rentals.hbs` template
