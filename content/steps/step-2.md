@@ -38,3 +38,5 @@ In the following section you will learn about the [Ember CLI](https://cli.emberj
 - Type in `ember new super-rentals` and hit enter and investigate the console output. Wait until no new messages show up in your terminal
 
 ![Example Generate App](/images/ember_demo-2a.gif)
+
+Here you can see all the files that make up the app. The Ember CLI created a new folder for us, called  `app` which alredy contains actual app code and in which we will code only to create our first web application. You can ignore all the other folders like `config/`, `node_modules/` or `vendor/` today. In the end Ember will build the app that runs in the browser out of all these files that you can see here.
