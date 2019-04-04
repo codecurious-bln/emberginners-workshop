@@ -7,22 +7,22 @@ order: 2
 
 ## What is Ember?
 
-Ember or more specifically EmberJS (JS stands for **J**ava**S**cript) is a framework that helps you build entire websites using JavaScript. Many modern websites are built based on JavaScript frameworks like EmberJS alone. JavaScript websites or so-called **web applications** tend to feel faster for their users and follow many best practices (TODO: dunno about the phrasing though) to create websites today.
+Ember or more specifically EmberJS (JS stands for **J** ava **S** cript) is a framework that helps you build entire websites using JavaScript. Many modern websites are built based on JavaScript frameworks like EmberJS alone. JavaScript websites or so-called **web applications** and tend to not only feel faster to their users, but also provide much more interactivity.
 
-The entire Ember framework is written in JavaScript and you can use JavaScript to build your web applications with Ember, too. Ember helps you to manage JavaScript files, allows you to edit them and run them in the browser. To achieve this, Ember will generate new JavaScript files for you on command, that you can modify further in your text editor to build your app.
+An example for a classic website is a news website such as [The Daily Mail](https://www.dailymail.co.uk) or [Tagesschau](https://www.tagesschau.de). These provide content to read for you but leave almost no room for interaction. Their main goal is presentation of information.
+
+An example for a modern web application is a service like [Gmail](https://gmail.com) or [Dropbox Paper](https://paper.dropbox.com).
+Features like your message editor or the message search integrate into the website smoothly and allow user interaction.
+
+Building web applications the Ember framework supports you by integrating into JavaScript code seamlessly
+(and which you'll be using to build your app) and the entire framework itself is written in JavaScript, too.
+Ember helps you to manage JavaScript files, allows you to edit them and run them in the browser. To achieve this, Ember will generate new JavaScript files for you on command, that you can modify further in your text editor to build your app.
 
 The app we'll building today will in the end look something like this:
 
 ![Super Rentals App](/images/super_rentals_demo.png)
 
 In this section we'll learn some of the basic principles of Ember and how we can use an important tool - the Ember CLI (CLI stands for **C**ommand **L**ine **I** nterface) - to make building our application really easy.
-
-<!--  Ember Tutorial: Super Rentals
-
-- What is Ember? A JavaScript framework
-- Overview of Finished Super Rentals app.
-- Exercise: Generate an app. Ember new. Investigate dir structure.
-- Exercise: Run the app. Learn about localhost and how to view the app. -->
 
 ## Generate a new app project
 
