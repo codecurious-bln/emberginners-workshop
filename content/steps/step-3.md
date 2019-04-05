@@ -150,13 +150,16 @@ let programmer = EmberObject.create({
 
 In this exercise we want to create a new EmberObject which can be used in the `about` Route which we created earlier. We will use the EmberObject to carry information that will be displayed on the about page.
 
-- Open the file `app/routes/about.js` in your text editor
+- Open the file `app/routes/rentals.js` in your text editor
 - import the EmberObject from the `@ember/object` package as seen above in the previous example. You can put the import statement at the very top of the file
 - inside of the `model() {}`, create the EmberObject with your application's name (you can choose one) as the object's `name` property and a descriptive text as the object's `text` property
 - indicate that you'd like to pass the object down to your route's template by using the `return` keyword. Example on using `return` with an example object `myobject`:
 
 ```
 model() {
+  let myobject = EmberObject.create({
+    /* FILL IN YOUR PROPERTIES */
+  });
   return myobject;
 }
 
