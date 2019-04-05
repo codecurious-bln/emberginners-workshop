@@ -35,7 +35,51 @@ To create routes that can be accessed via certain urls, we use the Ember CLI and
 </div>
 ```
 
-- Save the file `app/templates/about.hbs` and go back to your app in the browser. What changed?
+- Save the file `app/templates/about.hbs` and go back to your app in the browser. You can find the new page at [http://localhost:4200/about](http://localhost:4200/about). What changed?
+
+## What are links?
+
+In websites and web applications links allow the user to navigate to another sub page of the website with one single click. In an Ember app the handy `{{link-to}}` helper allows us to link to separate pages together. When a user clicks an element that is wrapped inside of a `{{link-to}}`, they will be redirected to the route the link is pointing to.
+
+Imagine we had an overview page somewhere in our application with the following markup:
+
+```hbs
+<h1>Overview</h1>
+Go to Contact Page
+```
+
+If we e.g. wanted to link the wording `Go to Contact Page` to a route, called `contact`, we could e.g. create a link to that page as follows:
+
+```hbs
+<h1>Overview</h1>
+{{#link-to "contact"}}Go to Contact Page{{/link-to}}
+```
+
+
+If the user now clicks on the sentence `Go to Contact Page` in our app, they will be redirected to the Contact route.
+
+The `{{link-to}}` helper will point to the correct route according to the route name. The route name is given to the page through its file name. This means you will find the definition for the `contact` route in the files `app/routes/contact.js` and `app/templates/contact.hbs`. Many things in an Ember app are defined and named by their respective file names. Ember as a framework emphasises naming conventions and makes it possible for us to recognise how a page is called by only checking its file name.
+
+
+### Exercise 3b: Link a page to another page
+
+In this exercise we'd like to 1. create a new page called `rentals` and 2. link that new page to another, already existing page in our app
+
+- Generate a new route called `rentals` in a similar way as you did in the previous exercise
+- Replace the content of the file `app/templates/rentals.hbs` with the following:
+
+```
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Welcome!</h2>
+  <p>We hope you find exactly what you're looking for in a place to stay.</p>
+  <!-- Replace me with a link -->
+</div>
+```
+
+- Visit the rentals page in your browser. Which url do you have to use? What do you see now?
+- Create a link to the `about` route right where the replacement placeholder is in the template. The link should read `About Us` when viewed in the app
+- Visit your application on the `rentals` page and see what has changed. Try out the link - what happens?
 
 
 ## What are JavaScript objects?
@@ -102,7 +146,7 @@ let programmer = EmberObject.create({
 ```
 
 
-### Exercise 3b: Creating and passing an EmberObject
+### Exercise 3c: Creating and passing an EmberObject
 
 In this exercise we want to create a new EmberObject which can be used in the `about` Route which we created earlier. We will use the EmberObject to carry information that will be displayed on the about page.
 
@@ -130,7 +174,7 @@ Earlier we created a new about route using the Ember CLI by typing `ember genera
 
 In this part we want to take a look how templates and route files are interconnected. You already returned data from your route file to a template in the previous exercise. But how is it displayed there?
 
-### Exercise 3c: Update the sub title of the about page
+### Exercise 3d: Update the sub title of the about page
 
 - Open app/templates/about.hbs and find all the properties of your `model` that are displayed
 - Go back into app/routes/about.js and add the missing property to the object returned from `model() {}`
