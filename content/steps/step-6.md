@@ -3,44 +3,104 @@ title: Step 6
 order: 6
 ---
 
-# What are Addons?
+# What are actions?
 
-Ember addons are plugins for your Ember app that are created and maintained by the community and which provide you with free to use functionality for your app, including new themes, components, functions and much, much more. You can install any Ember addon that you can find on [Ember Observer](https://emberobserver.com/) by using the `ember install` command. If we, for example, wanted to install the popular Ember addon `ember-simple-auth`, we could type into our terminal while in our app directory
+Actions are ways to make interactions of a user with your application trigger changes in your application's UI and they're especially useful for Components.
 
-```
-ember install ember-simple-auth
-```
+So far, you've learned how parent components can accept properties by being set on themselves or being passed into them on a template, and how that component can use those properties from both JavaScript and its template.
 
-This would automatically add the Ember addon to our application and preconfigure it. Depending on the addon we can use it in different ways. In the following example, we're gonna install and use and Ember addon to add a map view to our Ember app.
+But what about the opposite direction? How does data flow back out of the component to the parent? In Ember, components use actions to communicate events and changes. Technically, actions are functions in JavaScript. We'll see what functions are in the next section.
 
 
-### Exercise 6a: Installing Ember addons - Ember CLI Tutorial Style
+## Functions in JavaScript
 
-First let's add some styling to our Ember application. You can install the addon `ember-cli-tutorial-style` to make your app shine in an instant
+Functions are a reusable unit of one or several instructions in JavaScript. You can define a function using the `function` keyword, followed by a free name, e.g. `myFunction` and parentheses `()` and curly braces `{}` wrapping the instructions that should be part of the function. A function could look as follows:
 
-- Install in your app directory via `ember install ember-cli-tutorial-style`
-- Quit your serve by pressing `Ctrl + C` (Windows + Linux) or `Command + C` (Mac) in your terminal window where your server is running
-- restart the server by typing `ember server` and hitting enter
-- Revisit your Ember app in your browser. What do you see?
-
-### Exercise 6b: Installing Ember addons - Ember Leaflet
-
-To be able to display a map in our rentals page we can add an addon called Ember Leaflet
-
-- Check out Ember Observer and try to find the addon details page for Ember Leaflet
-- Install the addon in your Ember app
-- Copy-pasta the following configuration into your `mirage/config` file:
 
 ```
-this.passthrough('https://api.mapbox.com/**');
+function myFunction() {
+  alert('Hello World!');
+  alert('Hello again!');
+}
+```
+
+You can call your defined function by using its name, followed by parentheses and the obligatory semi-colon:
+
+
+```
+myFunction();
+```
+
+What are functions good for? Functions help us to write less repeatable code. In the example above we can e.g. save one line of code each time we call myFunction. We can call `myFunction` as often as we want by only writing a single line of code. It makes it also easy for us to update in our codebase. There's only one definition of `myFunction` and once we have updated it, we're able to update its invocations in several, other places of our code base automatically.
+
+Even better, we can make functions also change their behavior each time we call them in dependance of **parameters**. A parameter is any value, e.g. a word or a number or an object, that we pass into the function via its parentheses. Going back to the function definition, we can make the function aware, that it requires and uses parameters by including it in its function definition:
+
+
+```
+function myFunction(planet) {
+  alert(`Hello ${planet}!`);
+  alert(`Hello again!`);
+}
+```
+
+### Exercise 5a: Call a function
+
+- Open your browser and its console as described in step 1
+- copy-pasta the function definition for myFunction into your console and hit enter
+- Your function is now available in your browser to be called anytime. Try to call the function with a word of your choice and see what happens
+- Try calling the function with another word, what happens now?
+
+## Binding actions
+
+In Ember, an action is special kind of function. An action can be bound to components and UI elements to be triggered with user interaction. An function can be added as an action to e.g. a component by adding it to the `actions` object as follows:
+
+
+```
+// app/components/my-component.js
+import Component from '@ember/component';
+
+
+export default Component.extend({
+  actions: {
+    myFunction() {
+      alert('Hello World!');
+    }
+  },
+});
 
 ```
 
-- Get an access token for your map over [here](https://www.mapbox.com/account/access-tokens/)
-- Quit your server and restart it again, this time using the following command:
+In this example we omitted the `function` keyword as we have defined it on an object directly. The writing style of `myFunction() {}` is in fact a short hand for `myFunction: function() {}`.
+
+
+An action can be bound to any element or a component. For e.g. an ready-to-use input component, we can write the following to bind the action defined in `my-component`:
 
 ```
-LEAFLET_MAPS_API_KEY=<your key here> ember s
+<!-- app/templates/components/my-component.hbs
+{{input key-up=(action "myFunction")}}
+```
+
+Anytime the user types into the input (which will trigger a `key-up` event) the action `myFunction` is called.
+
+
+### Exercise 5b: Create an action in the list-filter component
+
+- open your `app/components/list-filter.js` file and add an action
+- Update the action definition for the `handleFilterEntry` action by filling it in with the following instruction:
 
 ```
-- Go back to your app in your browser and investigate the rentals page. What is happening now?
+alert(`Hello World!`);
+```
+- Go back to your rentals page in your browser and try interacting with the list filter. What happens?
+- Attach the action correctly to the input field by updating your component template for the list filter
+- Try again in your browser. What happens now?
+- Try filling in the following functionality into your `handleFilterEntry` action instead
+```
+let filterInputValue = this.value;
+let filterAction = this.filter;
+filterAction(filterInputValue).then((resultsObj) => {
+  if (resultsObj.query === this.value) {
+    this.set('results', resultsObj.results);
+  }
+});
+```
