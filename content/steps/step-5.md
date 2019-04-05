@@ -10,7 +10,6 @@ order: 5
 A component is an EmberObject that can be used to display interactive content in your Ember application. Ember components are used to turn markup text and styles into reusable content. Components consist of two parts: a JavaScript component file that defines behavior, and its accompanying Handlebars template that defines the markup for the component's UI.
 
 
-
 ## Where Can I Find Components?
 
 Components that have been created as part of our application can be used in any page of our application. You can find components that are already part of this application by taking a look into the `app/components` folder. You might e.g. see the following:
@@ -21,32 +20,27 @@ Components that have been created as part of our application can be used in any 
       |-- my-component.js
 ```
 
-### Exercise 4a: Find Out Which Components Are Part of Your App already
-
-As described in the previous section Ember applications keep components in one single place. Check out your own application for the presence of components using the terminal. Which components are there? Keep in mind that you can use `cd` to move between folders and `ls` to list the content of a folder.
-
-
 ## How Can I Use Components?
 
 You can use a component by typing its name in [upper camel case](http://wiki.c2.com/?UpperCamelCase) anywhere in a page's template.
-We could add that component created in `app/components/my-component.js` to the about page as follows:
+We could add that component created in `app/components/my-component.js` to the rentals page as follows:
 
 
 ```
-<!-- app/templates/about.hbs -->
+<!-- app/templates/rentals.hbs -->
 <MyComponent />
 ```
 
 This process is also described as _invoking a component_. Once the component is invoked, we can check back to the `about` page in our browser and see the component displayed right where we left it in the template - after the page's title, but before its descriptive text.
 
 
-### Exercise 4b: Invoke the rental listing component
+### Exercise 5a: Invoke the rental listing component
 
-As you saw earlier, your demo application already comes with a ready-to-use component pre-equipped. Its name is `rental-listing`.
+s described in the previous section Ember applications keep components in one single place. Check out your own application for the presence of components using the terminal. Which components are there? Keep in mind that you can use `cd` to move between folders and `ls` to list the content of a folder.
 
-- Open your application's template for the `about` page
-- Invoke the `rental-listing` component on the `app/templates/rentals.hbs` template
-- View your about page in the browser and see what happened
+- Open your application's template for the `rentals` page
+- Invoke the component that you already found in your app in `app/templates/rentals.hbs`
+- View your rentals page in the browser and see what happened. Attention! You can now access your `rentals` page by visiting your home page at [http://localhost:4200/](http://localhost:4200/)
 
 
 ## How are components created?
@@ -60,7 +54,7 @@ ember generate component my-component
 This will generate both the `.js` and the template `.hbs` file in your `app/components` and `app/templates/components` directory. Similar to a route, both the `.js` and the `.hbs` file are connected. Let's check this out in the next example.
 
 
-### Exercise 4c: Create a Component
+### Exercise 5b: Create a Component
 
 - In your terminal, use the Ember CLI to create a new component called `list-filter`
 - Open the file `app/templates/components/list-filter.hbs` and update its content with the following:
@@ -118,7 +112,7 @@ Later on, this property is available in our component template at `app/templates
 
 Once we invoke our component in a route and visit that route in our browser, we can see the title displayed right where the component is put into the page.
 
-#### Exercise 4d: Adding A Title to List Filter
+#### Exercise 5c: Adding A Title to List Filter
 
 - Open your `app/components/list-filter.js` and define a `title` property
 - Show the title somewhere in your component's template
@@ -189,7 +183,7 @@ export default Component.extend({
 In Ember you can always retrieve the value of a property on an EmberObject or any of its descendant objects like Components, Routes and others via `this.` when you're trying to get the value on the object itself. It means that you're looking for a property that is defined on *this* object. In the example above, we try to get a hold of the `greeting` and the `name` property inside of the `fullGreeting` property, which is also part of the same EmberObject, component or route. Therefore `this.greeting` and `this.name` will give us the properties of the same object.
 
 
-#### Exercise 4e: Complete the computed property in the filter-list component
+#### Exercise 5d: Complete the computed property in the filter-list component
 
 The filter-list component already comes with a `filterLabel` property, that needs to be completed
 
