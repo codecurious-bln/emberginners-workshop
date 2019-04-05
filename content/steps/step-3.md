@@ -148,7 +148,7 @@ let programmer = EmberObject.create({
 
 ### Exercise 3c: Creating and passing an EmberObject
 
-In this exercise we want to create a new EmberObject which can be used in the `about` Route which we created earlier. We will use the EmberObject to carry information that will be displayed on the about page.
+In this exercise we want to create a new EmberObject which can be used in the `rentals` Route which we created earlier. We will use the EmberObject to carry information that will be displayed on the rentals page.
 
 - Open the file `app/routes/rentals.js` in your text editor
 - import the EmberObject from the `@ember/object` package as seen above in the previous example. You can put the import statement at the very top of the file
@@ -170,15 +170,15 @@ model() {
 
 ## How are routes and templates connected?
 
-Earlier we created a new about route using the Ember CLI by typing `ember generate route about` into the terminal. This gave us two files, namely
+Earlier we created a new about route using the Ember CLI by typing `ember generate route rentals` into the terminal. This gave us two files, namely
 
-- app/routes/about.js
-- app/templates/about.hbs
+- app/routes/rentals.js
+- app/templates/rentals.hbs
 
 In this part we want to take a look how templates and route files are interconnected. You already returned data from your route file to a template in the previous exercise. But how is it displayed there?
 
-### Exercise 3d: Update the sub title of the about page
+### Exercise 3d: Update information on the page
 
-- Open app/templates/about.hbs and find all the properties of your `model` that are displayed
-- Go back into app/routes/about.js and add the missing property to the object returned from `model() {}`
-- What happens in your application's `about` page in your browser?
+- Open `app/templates/rentals.hbs` and find all the properties of your `model` that are displayed
+- Go back into app/routes/rentals.js and take a look: How can you make the listing mention that the rental is located in `Berlin` rather than San Francisco? Update the data returned from the `model` function in your route accordingly. Check back on the rentals page in your browser to see the change
+- Investigate the `app/templates/rentals.hbs` template another time and take a look at the `availabilityStatus` which is currently not displayed in your app's rentals page. Find out how you can make the rentals page say, that the availability for this rentals is `for sale`
