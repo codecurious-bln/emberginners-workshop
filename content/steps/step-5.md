@@ -43,36 +43,6 @@ s described in the previous section Ember applications keep components in one si
 - View your rentals page in the browser and see what happened. Attention! You can now access your `rentals` page by visiting your home page at [http://localhost:4200/](http://localhost:4200/)
 
 
-## How are components created?
-
-To generate a new component, you can use the Ember CLI to create the required files. Think of a name for your new component, e.g. `my-component` and pass it to the `generate` command as follows:
-
-```
-ember generate component my-component
-```
-
-This will generate both the `.js` and the template `.hbs` file in your `app/components` and `app/templates/components` directory. Similar to a route, both the `.js` and the `.hbs` file are connected. Let's check this out in the next example.
-
-
-### Exercise 5b: Create a Component
-
-- In your terminal, use the Ember CLI to create a new component called `list-filter`
-- Open the file `app/templates/components/list-filter.hbs` and update its content with the following:
-
-```
-{{input
-  value=this.value
-  key-up=(action "handleFilterEntry")
-  class="light"
-  placeholder="Filter By City"
-}}
-{{yield this.results}}
-```
-
-- Save the file and now invoke your component on another route's template, that you can find on `app/templates/rentals.hbs`
-- What do you see on the rentals page?
-
-
 ## What are component properties?
 
 Since Ember components are a special type of EmberObjects, which in return are a special type of JavaScript objects, Ember Components also have properties just like any object. What's special about EmberObjects and components though, is that they can have two different types of properties: regular properties and computed properties.
@@ -98,7 +68,7 @@ This works exactly was we would expect when declaring a property on a regular Ja
 
 ```
 <!-- app/templates/another-route.hbs -->
-{{my-component title="My new component"}}
+<MyComponent @title="My new component" />
 
 ```
 
@@ -107,18 +77,47 @@ Later on, this property is available in our component template at `app/templates
 
 ```
 <!-- app/templates/components/my-component.hbs -->
-{{title}}
+{{this.title}}
 ```
 
 Once we invoke our component in a route and visit that route in our browser, we can see the title displayed right where the component is put into the page.
 
-#### Exercise 5c: Adding A Title to List Filter
+#### Exercise 5b: Change the component view with properties
 
-- Open your `app/components/list-filter.js` and define a `title` property
-- Show the title somewhere in your component's template
-- Investigate the UI in your browser on your `rentals` page
-- Go back and pass in the same property on the component's invocation site with another word for the title
+- Open your `app/components/rental-listing.js` and see which properties are already available. What do you find?
+- Take another look at `app/templates/componets/rental-listing.hbs` - what do you find when you're thinking about the properties that you already found defined in the `rental-listing.js` file?
+- Investigate the UI of the rental-listing component in your browser on your `rentals` page
+- Go back to `app/templates/rentals.hbs` and pass in the property that is responsible for the image width with the value `true`
 - Re-investigate the `rentals` page in the browser. What has happened?
+
+## How are components created?
+
+To generate a new component, you can use the Ember CLI to create the required files. Think of a name for your new component, e.g. `my-component` and pass it to the `generate` command as follows:
+
+```
+ember generate component my-component
+```
+
+This will generate both the `.js` and the template `.hbs` file in your `app/components` and `app/templates/components` directory. Similar to a route, both the `.js` and the `.hbs` file are connected. Let's check this out in the next example.
+
+
+### Exercise 5c: Create a Component
+
+- In your terminal, use the Ember CLI to create a new component called `list-filter`
+- Open the file `app/templates/components/list-filter.hbs` and update its content with the following:
+
+```
+{{input
+  value=this.value
+  key-up=(action "handleFilterEntry")
+  class="light"
+  placeholder="Filter By City"
+}}
+{{yield this.results}}
+```
+
+- Save the file and now invoke your component on another route's template, that you can find on `app/templates/rentals.hbs`
+- What do you see on the rentals page?
 
 
 ### Computed properties
