@@ -90,102 +90,40 @@ Once we invoke our component in a route and visit that route in our browser, we 
 - Go back to `app/templates/rentals.hbs` and pass in the property that is responsible for the image width with the value `true`
 - Re-investigate the `rentals` page in the browser. What has happened?
 
-## How are components created?
+### How can you manipulate properties otherwise?
 
-To generate a new component, you can use the Ember CLI to create the required files. Think of a name for your new component, e.g. `my-component` and pass it to the `generate` command as follows:
+Passing in a value at the invocation site of a component is not the only way to update component property values. You can also use `.set()` to change property values.
+
 
 ```
-ember generate component my-component
-```
-
-This will generate both the `.js` and the template `.hbs` file in your `app/components` and `app/templates/components` directory. Similar to a route, both the `.js` and the `.hbs` file are connected. Let's check this out in the next example.
-
-
-### Exercise 5c: Create a Component
-
-- In your terminal, use the Ember CLI to create a new component called `list-filter`
-- Open the file `app/templates/components/list-filter.hbs` and update its content with the following:
-
-```
-{{input
-  value=this.value
-  key-up=(action "handleFilterEntry")
-  class="light"
-  placeholder="Filter By City"
-}}
-{{yield this.results}}
-```
-
-- Save the file and now invoke your component on another route's template, that you can find on `app/templates/rentals.hbs`
-- What do you see on the rentals page?
-
-
-### Computed properties
-
-Computed properties are properties which may change over time. In an Ember app, they're often used whenever we aim for either user interaction or live updates to trigger a change in the display of our app. Computed properties allow automatic changes by depending on one to several other properties, that may change through user interaction and other events. We will see how this plays out in a later exercise. For now, let's see how a computed property is defined.
-
-Let's try to create a computed property on an EmberObject by first defining two simple properties that might change during the lifetime of our application. Let's call them `greeting` and `name`:
-
-
-```js
-import EmberObject from '@ember/object';
-
-export default EmberObject.extend({
-  greeting: 'Aloha',
-  name: 'Jen',
+let programmer = EmberObject.create({
+  title: 'Ada Lovelace',
+  birthyear: 1815,
 });
+console.log(programmer.birthyear);
+// => 1815
+
+programmer.set('birthyear', 1817);
+console.log(programmer.birthyear);
+// => 1817
 ```
 
-Let's now try to create a property that will always display both the greeting and the name as a full sentence. We could write something as follows:
+There's a special functionality you can use for flipping between a special kind of value: Booleans. Boolean values can only have one of two different states: `true` or `false`. To update Booleans, you can also use `.toggleProperty()` to change the value to the opposite.
 
-```js
-import EmberObject from '@ember/object';
-
-export default EmberObject.extend({
-  greeting: 'Aloha',
-  name: 'Jen',
-  fullGreeting: 'Aloha Jen!',
+```
+let programmer = EmberObject.create({
+  title: 'Ada Lovelace',
+  birthyear: 1815,
+  isScientist: true,
 });
+console.log(programmer.isScientist);
+// => true
+
+programmer.toggleProperty('isScientist');
+console.log(programmer.isScientist);
+// => false
+
+programmer.toggleProperty('isScientist');
+console.log(programmer.isScientist);
+// => true
 ```
-
-This comes with the disadvantage that any time we want to update the greeting phrase or the name, we'd also need to update the `fullGreeting` property ourselves to make the wording match. Using computed properties, we're able to let Ember do this for us automatically. You can define `fullGreeting` as a computed property as follows:
-
-
-```js
-import EmberObject, { computed } from '@ember/object';
-
-export default EmberObject.extend({
-  greeting: 'Aloha',
-  name: 'Jen',
-  fullGreeting: computed('greeting', 'name', function() {
-    return `${this.greeting} ${this.name}!`;
-  }),
-});
-```
-
-The same principles apply to any descendant object of an EmberObject (components, routes among others). If we created an `ember-core-team-member` component that also had the same `fullGreeting` property as the EmberObject above, we could write:
-
-
-```js
-import Component from '@ember/component';
-import { computed } from '@ember/object';
-
-export default Component.extend({
-  greeting: 'Aloha',
-  name: 'Jen',
-  fullGreeting: computed('greeting', 'name', function() {
-    return `${this.greeting} ${this.name}!`;
-  }),
-});
-```
-
-In Ember you can always retrieve the value of a property on an EmberObject or any of its descendant objects like Components, Routes and others via `this.` when you're trying to get the value on the object itself. It means that you're looking for a property that is defined on *this* object. In the example above, we try to get a hold of the `greeting` and the `name` property inside of the `fullGreeting` property, which is also part of the same EmberObject, component or route. Therefore `this.greeting` and `this.name` will give us the properties of the same object.
-
-
-#### Exercise 5d: Complete the computed property in the filter-list component
-
-The filter-list component already comes with a `filterLabel` property, that needs to be completed
-
-- Open your filter-list component's `.js` file
-- complete the content of the `filterLabel` computed property, so that it will always read `You have selected: <the filter name>`
-- This component needs to be dependent on the `selectedFilter` property to update correctly. You can set `selectedFilter` as a simple property for now and we will check out its updates later
