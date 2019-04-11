@@ -115,5 +115,5 @@ Anytime the user clicks the button (which will trigger a so-called `onclick` eve
 
 - open your `app/components/rental-listing.js` file and add an action called `toggleImageSize`
 - If the action is called, the property `isWide` should be changed to the opposite value. E.g. if `isWide` has the value `true`, after calling the action it should turn out to be `false`. Calling the action while `isWide` is `true` should end up in `isWide` having the value `false`. You can review the [Step 5](x) for a quick refresher on what you can use to make the property flip between the `true` and `false` value
-- Update the action definition for the `handleFilterEntry` action by filling it in with the following instruction:
-- Try again in your browser. What happens now?
+- Update your component's template to bind the `toggleImageSize` action to the element which is described with `role=button`. You can find your template in the `app/templates/components` folder.
+- Try again in your browser while clicking the button in the rental listing. What happens now?
