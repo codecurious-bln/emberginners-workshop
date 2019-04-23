@@ -83,10 +83,10 @@ export default Component.extend({
 In Ember you can always retrieve the value of a property on an EmberObject or any of its descendant objects like Components, Routes and others via `this.` when you're trying to get the value on the object itself. It means that you're looking for a property that is defined on *this* object. In the example above, we try to get a hold of the `greeting` and the `name` property inside of the `fullGreeting` property, which is also part of the same EmberObject, component or route. Therefore `this.greeting` and `this.name` will give us the properties of the same object.
 
 
-#### Exercise 5d: Complete the computed property in the filter-list component
+#### Exercise 7b: Complete the computed property in the filter-list component
 
 The filter-list component already comes with a `filterLabel` property, that needs to be completed
 
 - Open your filter-list component's `.js` file
-- complete the content of the `filterLabel` computed property, so that it will always read `You have selected: <the filter name>`
-- This component needs to be dependent on the `selectedFilter` property to update correctly. You can set `selectedFilter` as a simple property for now and we will check out its updates later
+- complete the content of the `filterLabel` computed property, so that it will always read `You have selected: <the filter name>`. Feel free to check out the template of the list filter component at `app/templates/components/list-filter.hbs` to see which property you have to set!
+- This component needs to be dependent on the `selectedFilter` property to update correctly. You can set `selectedFilter` as a simple property for now and we will check out how to update the property later
