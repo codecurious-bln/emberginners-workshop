@@ -138,3 +138,11 @@ So far we have only displayed one single rental at a time in our super rentals a
 - Revisit the template for the rentals page `app/templates/rentals.hbs`
 - Replace the missing parts so that you're able to display all the rentals that are passed to the template as `model`. Be sure  to make use of the `rental-listing` component you are already using to display a single rental to your advantage!
 - Check back in your browser at `http://localhost:4200` - what do you see?
+
+### Exercise 8c: Filter your rentals list by city
+
+Your Ember demo app is automatically updated at this step to let your `list-filter` component have a new functionality. Be sure to checkout the component definition at `app/components/list-filter.js` to check out the changes. In the following make sure that your list filter integrated with the rentals list well as follows:
+
+- Bind the new action that has been add to the `list-filter` to the input field found in the component's template. Check out   the component definition to figure out its name. Also remember that actions that are bound inside of helpers or components are wrapped into parentheses (`()`) and not into curly braces (`{{` `}}`) as we've seen in earlier examples
+- Go back to the rentals page template and notice how the `ListFilter` component wraps the `RentalListing` component and gives back an object `filteredResults`. This is in fact an enumerable that will be updated automatically once you use the list filter. Remember the exercise using `each` before and imagine how you could use the `filteredResults` list as part of your rentals list which is **inside of the ListFilter block**
+- After you made  your changes, go back to the rentals page and try to use the filter. What do you see?
