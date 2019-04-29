@@ -2,12 +2,12 @@
 title: Pre-Install Party
 ---
 
-This is a workshop to teach those who have never programmed (or at least never programmed with JavaScript - the programming language of the web) before a few basics in web and JavaScript development. This also includes a short introduction into the JavaScript framework EmberJS which we will use to build our very first web application.
+This is a workshop to teach those who have never programmed before (or at least never programmed with JavaScript - the programming language of the web) a few basics in web and JavaScript development. This also includes a short introduction into the JavaScript framework EmberJS which we will use to build our very first web application.
 
 ## How to follow the workshop
 
 This workshop and its materials are based on the workshop slides that you can find online at [#url-here](#url-here).
-You can follow the slides and go back to previous lessons any time before, during or after the workshop.
+You can follow the slides and go back to previous lessons at any time, either during or after the workshop.
 
 Do you have feedback or improvements for the workshop materials? Talk to us during the workshop and we'd be looking forward to incorporate your suggestion into the next edition of this project.
 
@@ -60,7 +60,7 @@ To be able to follow the workshop, we need to install several programs onto our 
 
 #### Installing a text editor
 
-To be able to write our first web application we need to install a text editor to be able to edit our program. In the scope for this workshop we will use **Atom** which is a free text editor that's well suited for development, too. You can download and install it over [here](https://atom.io/).
+To be able to write our first web application we need to install a text editor that allows us to edit our program. In the scope for this workshop we will use **Atom** which is a free text editor that's well suited for development, too. You can download and install it over [here](https://atom.io/).
 
 #### Installing a browser
 
@@ -92,7 +92,7 @@ Throughout this workshop we will mention several commands that you need to run i
 
 ##### Exercise: Start and Stop a Process
 
-There is a program you can run to "knock at the door" of a website and check if it's currently online. The program is called **ping**. This program has a simple terminal command that you can use to run it, also called `ping` and it can be run in your terminal window by typing the following:
+There is a program you can run to "knock on the door" of a website and check if it's currently online. The program is called **ping**. This program has a simple terminal command that you can use to run it, also called `ping` and it can be run in your terminal window by typing the following:
 
 ```bash
 ping replace-this-with-the-url-of-a-website
@@ -103,7 +103,7 @@ If we for example wanted to check the current status of the EmberJS website, we 
 ```bash
 ping emberjs.com
 ```
-
+Now, try it yourself:
 - "ping" a website of your choice via your terminal using the `ping` command
 - What do you see in the terminal window?
 - Stop the process by using the control mentioned earlier in this section
@@ -114,7 +114,7 @@ The `ping` command takes in a url which can be different anytime the program is 
 
 Your terminal allows you to navigate through the folders of your computer and create new directories, too. This can be really handy when managing the code files you'll be creating, editing and saving in this workshop.
 
-If you want to create a new folder, you can run the command for **m** a **k** ing **dir** ectories, followed by the name you'd like to have for that particular folder as a parameter:
+If you want to create a new folder, you can run `mkdir`, the command for **m** a **k** ing **dir** ectories, followed by the name you'd like to have for that particular folder as a parameter:
 
 
 ```
@@ -132,6 +132,8 @@ And to list the content of the folder, you can run:
 ```
 ls
 ```
+
+Go ahead and try it:
 
 - Create a new folder called `ember-workshop` with terminal commands
 - Navigate into your newly created folder using the terminal
