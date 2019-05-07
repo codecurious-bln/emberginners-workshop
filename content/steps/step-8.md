@@ -52,9 +52,9 @@ let allthethings = [{ name: 'Eeyore', kind: 'donkey' }, 12, 'cherries', 3];
 
 ## Interacting with Arrays
 
-There are many different ways to interact with arrays and make use of the fact, that they contain a collection of items in an ordered manner. In the scope of the tutorial, we won't be able to give a full overview of all the different ways to work with arrays, but please feel free to take a look [at this great introduction in your own time after this course]().
+There are many different ways to interact with arrays and make use of the fact that they contain a collection of items in an ordered manner. In the scope of the tutorial, we won't be able to give a full overview of all the different ways to work with arrays, but please feel free to take a look [at this great introduction in your own time after this course]().
 
-Instead, in this workshop we will show you one neat function that you can use right from the start on each array. It allows you to go through each single of its contents and do something with it, for example log it to the console or really anything that you can come up with. This function is called `forEach` and you can use it as follows:
+Instead, in this workshop we will show you one neat function that you can use right from the start on each array. It allows you to go through each one of its contents and do something with it, for example log it to the console or really anything that you can come up with. This function is called `forEach` and you can use it as follows:
 
 
 ```js
@@ -74,7 +74,7 @@ In the next exercise, try `forEach` out for yourself and see what happens!
 ### Exercise 8a: Loop over an array
 
 - Open your browser and the developer console
-- Create an array listing a several objects. Each object should define the name of one of your table neighbours, as well as the operating system they're using. E.g. if the person  sitting next to you is called Suzie and is using a Mac, create an object as the following:
+- Create an array listing several objects. Each object should define the name of one of your table neighbours, as well as the operating system they're using. E.g. if the person  sitting next to you is called Suzie and is using a Mac, create an object as the following:
 
 ```js
 { name: 'Suzie', os: 'Mac' }
@@ -93,12 +93,12 @@ Be sure to replace `someone` and `os` with the correct variable names that are p
 
 In an Ember app, an enumerable is a special kind of object, that contains any number of other objects - so called child objects. Ember allows you to interact with enumerables in a similar way as you would do with generic JavaScript arrays, but on top of that also provides with additional helper functions and properties that are unique to Ember's enumerable.
 
-In the scope of this workshop we want to take a look how you can interact with enumerables in your application and specifically in the template. To learn more about that, let's take a look at one particular and very handy helper: `each`
+In the scope of this workshop we want to take a look at how you can interact with enumerables in your application and specifically in the template. To learn more about that, let's take a look at one particular and very handy helper: `each`
 
 
 ## How does the each template helper work?
 
-In our templates we have the ability to not only invoke components we have built ourselves, but also to use a couple of very useful built-in helpers, that Ember provides us with right from the start. One of these helpers is each. It allows us to go through each item of an enumerable - a list of objects - and do something with them in our template. In this regard it is in fact very similar functionwise as the `forEach` function we got familiar with in the previous exercise.
+In our templates we have the ability to not only invoke components we have built ourselves, but also to use a couple of very useful built-in helpers, that Ember provides us with right from the start. One of these helpers is each. It allows us to go through each item of an enumerable - a list of objects - and do something with them in our template. In this regard it is in fact very similar functionwise to the `forEach` function we got familiar with in the previous exercise.
 
 Instead of being able to do something with the list items in the context of a self-defined function though, the `each` helper allows us to do something with the list items **directly in the template** instead. Check out this example template:
 
@@ -143,6 +143,6 @@ So far we have only displayed one single rental at a time in our super rentals a
 
 Your Ember demo app is automatically updated at this step to let your `list-filter` component have a new functionality. Be sure to checkout the component definition at `app/components/list-filter.js` to check out the changes. In the following make sure that your list filter integrated with the rentals list well as follows:
 
-- Bind the new action that has been add to the `list-filter` to the input field found in the component's template. Check out   the component definition to figure out its name. Also remember that actions that are bound inside of helpers or components are wrapped into parentheses (`()`) and not into curly braces (`{{` `}}`) as we've seen in earlier examples
+- Bind the new action that has been added to the `list-filter` to the input field found in the component's template. Check out   the component definition to figure out its name. Also remember that actions that are bound inside of helpers or components are wrapped into parentheses (`()`) and not into curly braces (`{{` `}}`) as we've seen in earlier examples
 - Go back to the rentals page template and notice how the `ListFilter` component wraps the `RentalListing` component and gives back an object `filteredResults`. This is in fact an enumerable that will be updated automatically once you use the list filter. Remember the exercise using `each` before and imagine how you could use the `filteredResults` list as part of your rentals list which is **inside of the ListFilter block**
 - After you made  your changes, go back to the rentals page and try to use the filter. What do you see?
