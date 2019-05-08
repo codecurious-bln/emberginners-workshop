@@ -21,15 +21,15 @@ Instead, we will use a **tool** that is pre-installed for us in any browser to w
 
 - Open your browser (Chrome and Firefox are the best options for following this workshop. You can download them here: [Chrome](https://www.google.com/chrome/) [Firefox](https://www.mozilla.org/firefox/))
 - Do one of the following:
--- all types of operating systems: right click into the window, select "Inspect" and click on the "Console" tab
--- On Mac: Hit Option + Command + I
--- On Windows: F12 or Control+Shift+I
--- On Linux (e.g. Ubuntu, Fedora): F12 or Control+Shift+I
-- Type into the window right next to the small arrow: `alert("Hello World!")`
+    - Any operating system: right click into the window, select "Inspect" and click on the "Console" tab
+    - On Mac: Hit Option + Command + I
+    - On Windows: F12 or Control + Shift + I
+    - On Linux (e.g. Ubuntu, Fedora): F12 or Control + Shift + I
+- Type into the window right next to the small arrow: `alert("Hello World!")` and hit Enter.
 
 ![Console Demo 1.a](/images/console_demo-1a.png)
 
-- Type into the window right next to the small arrow `console.log("Hello World!")`. What happens now?
+- Type into the window right next to the small arrow `console.log("Hello World!")` and hit Enter. What happens now?
 
 #### Exercise 1b: Run JavaScript from a file
 
@@ -56,7 +56,7 @@ let color = 'purple';
 
 This line does 3 things:
 
-- It creates a new variable, a container for any word or number you want to fill into
+- It creates a new variable, a container for any word or number you want to store
 - It fills in the variable `color` with the word `purple`
 - It allows you to retrieve the word `purple` any time again in your code by reading from the variable `color`
 

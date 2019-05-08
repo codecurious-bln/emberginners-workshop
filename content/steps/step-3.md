@@ -7,7 +7,7 @@ order: 3
 
 ## What is routing?
 
-Our application allows us to navigate different parts of it via url. The url is the name of a sub page in our website, which we can type into the browser navigation bar to allow us to land on that part of our app. The url allows to access different `routes` of our Ember app.
+Our application allows us to navigate to different parts of it via url. The url is the name of a sub page in our website, which we can type into the browser navigation bar to allow us to land on that part of our app. The url allows to access different `routes` of our Ember app.
 
 Routing in web applications is important, since it enables users to share a specific part of the app with others. E.g. if you want a friend to take a look at your super-rentals overview page, you can just send them the link (a.k.a url) that opens that part of the application.
 
@@ -21,7 +21,7 @@ To create routes that can be accessed via certain urls, we use the Ember CLI and
 - Open `app/router.js` and investigate the newly added route: `this.route('about')`
 - Open your application in your browser to see the new route in action: `http://localhost:4200/about`
 - In our app, a route is represented by a JavaScript file (`.js` file ending) and a template (`.hbs` file ending). Open the template `app/templates/about.hbs` in your text editor
-- Copy-pasta the following into your template (`app/templates/about.hbs`)
+- Copy-paste the following into your template (`app/templates/about.hbs`)
 
 ```hbs
 <div class="jumbo">
@@ -39,7 +39,7 @@ To create routes that can be accessed via certain urls, we use the Ember CLI and
 
 ## What are links?
 
-In websites and web applications links allow the user to navigate to another sub page of the website with one single click. In an Ember app the handy `{{link-to}}` helper allows us to link to separate pages together. When a user clicks an element that is wrapped inside of a `{{link-to}}`, they will be redirected to the route the link is pointing to.
+In websites and web applications links allow the user to navigate to another sub page of the website with one single click. In an Ember app the handy `{{link-to}}` helper allows us to link to separate pages. When a user clicks an element that is wrapped inside of a `{{link-to}}`, they will be redirected to the route the link is pointing to.
 
 Imagine we had an overview page somewhere in our application with the following markup:
 
@@ -87,7 +87,7 @@ In this exercise we'd like to 1. create a new page called `rentals` and 2. link 
 Objects in JavaScript are a special kind of data type. Each data type in JavaScript comes with its own characteristics in how you can store and access data. Data can come in many forms. E.g. the word 'tomster' in a JavaScript program can be a piece of data. If you wanted to use the word `tomster` in your JavaScript code, you'd need to do so using the `string` data type for example. The number 42 is of the `Number` data type.
 
 
-In Ember most things that we work with revolve around objects though. An object is defined by having no, one or several properties, where each property has a specified value. An object can look for example like this:
+In Ember most things that we work with revolve around objects though. An object is defined by having zero, one or several properties, where each property has a specified value. An object can look for example like this:
 
 
 ```js
@@ -148,7 +148,7 @@ let programmer = EmberObject.create({
 
 ### Exercise 3c: Creating and passing an EmberObject
 
-In this exercise we want to create a new EmberObject which can be used in the `rentals` Route which we created earlier. We will use the EmberObject to carry information that will be displayed on the rentals page.
+In this exercise we want to create a new EmberObject which can be used in the `rentals` route which we created earlier. We will use the EmberObject to carry information that will be displayed on the rentals page.
 
 - Open the file `app/routes/rentals.js` in your text editor
 - import the EmberObject from the `@ember/object` package as seen above in the previous example. You can put the import statement at the very top of the file
@@ -170,15 +170,15 @@ model() {
 
 ## How are routes and templates connected?
 
-Earlier we created a new about route using the Ember CLI by typing `ember generate route rentals` into the terminal. This gave us two files, namely
+Earlier we created a new route using the Ember CLI by typing `ember generate route rentals` into the terminal. This gave us two files, namely
 
 - app/routes/rentals.js
 - app/templates/rentals.hbs
 
-In this part we want to take a look how templates and route files are interconnected. You already returned data from your route file to a template in the previous exercise. But how is it displayed there?
+In this part we want to take a look at how templates and route files are interconnected. You already returned data from your route file to a template in the previous exercise. But how is it displayed there?
 
 ### Exercise 3d: Update information on the page
 
 - Open `app/templates/rentals.hbs` and find all the properties of your `model` that are displayed
-- Go back into app/routes/rentals.js and take a look: How can you make the listing mention that the rental is located in `Berlin` rather than San Francisco? Update the data returned from the `model` function in your route accordingly. Check back on the rentals page in your browser to see the change
+- Go back to `app/routes/rentals.js` and take a look: How can you make the listing mention that the rental is located in `Berlin` rather than San Francisco? Update the data returned from the `model` function in your route accordingly. Check back on the rentals page in your browser to see the change
 - Investigate the `app/templates/rentals.hbs` template another time and take a look at the `availabilityStatus` which is currently not displayed in your app's rentals page. Find out how you can make the rentals page say, that the availability for this rentals is `for sale`

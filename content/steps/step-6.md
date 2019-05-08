@@ -33,7 +33,7 @@ myFunction();
 // => Hello again!
 ```
 
-What are functions good for? Functions help us to write less repeatable code. In the example above we can e.g. save one line of code each time we call myFunction. We can call `myFunction` as often as we want by only writing a single line of code. It makes it also easy for us to update in our codebase. There's only one definition of `myFunction` and once we have updated it, we're able to update its invocations in several, other places of our code base automatically.
+What are functions good for? Functions help us to write less repeated code. In the example above we can e.g. save one line of code each time we call myFunction. We can call `myFunction` as often as we want by only writing a single line of code. It makes it also easy for us to update in our codebase. There's only one definition of `myFunction` and once we have updated it, we're able to update its invocations in several, other places of our code base automatically.
 
 Even better, we can make functions also change their behavior each time we call them in dependance of **parameters**. A parameter is any value, e.g. a word or a number or an object, that we pass into the function via its parentheses. Going back to the function definition, we can make the function aware, that it requires and uses parameters by including it in its function definition:
 
@@ -55,8 +55,8 @@ myFunction("Saturn");
 
 ### Exercise 6a: Call a function
 
-- Open your browser and its console as described in step 1
-- copy-pasta the function definition for myFunction into your console and hit enter
+- Open your browser and its console as described in [step 1](/steps/step-1)
+- Copy-paste the function definition for myFunction into your console and hit enter
 - Your function is now available in your browser to be called anytime. Try to call the function with a word of your choice as a parameter (pass it into the braces `()`) and see what happens
 - Try calling the function with another word, what happens now?
 
@@ -101,7 +101,7 @@ export default Component.extend({
 In this example we omitted the `function` keyword as we have defined it on an object directly. The writing style of `myFunction() {}` is in fact a short hand for `myFunction: function() {}`.
 
 
-An action can be bound to any element or a component. For e.g. an ready-to-use input component, we can write the following to bind the action defined in `my-component`:
+An action can be bound to any element or a component, e.g. a ready-to-use input component. We can write the following to bind the action defined in `my-component`:
 
 ```
 <!-- app/templates/components/my-component.hbs
@@ -114,6 +114,6 @@ Anytime the user clicks the button (which will trigger a so-called `onclick` eve
 ### Exercise 6b: Create an action in the rental-listing component
 
 - open your `app/components/rental-listing.js` file and add an action called `toggleImageSize`
-- If the action is called, the property `isWide` should be changed to the opposite value. E.g. if `isWide` has the value `true`, after calling the action it should turn out to be `false`. Calling the action while `isWide` is `true` should end up in `isWide` having the value `false`. You can review the [Step 5](x) for a quick refresher on what you can use to make the property flip between the `true` and `false` value
-- Update your component's template to bind the `toggleImageSize` action to the element which is described with `role=button`. You can find your template in the `app/templates/components` folder.
+- If the action is called, the property `isWide` should be changed to the opposite value. E.g. if `isWide` has the value `true`, after calling the action it should turn out to be `false`. Calling the action while `isWide` is `true` should end up in `isWide` having the value `false`. You can review the [Step 5](/steps/step-5) for a quick refresher on what you can use to make the property flip between the `true` and `false` values
+- Update your component's template to bind the `toggleImageSize` action to the element which is described with `role=button`. You can find your template in the `app/templates/components` folder
 - Try again in your browser while clicking the button in the rental listing. What happens now?

@@ -11,7 +11,7 @@ Ember addons are plugins for your Ember app that are created and maintained by t
 ember install ember-simple-auth
 ```
 
-This would automatically add the Ember addon to our application and preconfigure it. Depending on the addon we can use it in different ways. In the following example, we're gonna install and use and Ember addon to add a map view to our Ember app.
+This would automatically add the Ember addon to our application and preconfigure it. Depending on the addon we can use it in different ways. In the following example, we're gonna install and use and Ember addon to add styling to our Ember app.
 
 
 ### Exercise 4a: Installing Ember addons - Ember CLI Tutorial Style

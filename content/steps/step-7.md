@@ -88,5 +88,5 @@ In Ember you can always retrieve the value of a property on an EmberObject or an
 The filter-list component already comes with a `filterLabel` property, that needs to be completed
 
 - Open your filter-list component's `.js` file
-- complete the content of the `filterLabel` computed property, so that it will always read `You have selected: <the filter name>`. Feel free to check out the template of the list filter component at `app/templates/components/list-filter.hbs` to see which property you have to set!
+- Complete the content of the `filterLabel` computed property, so that it will always read `You have selected: <the filter name>`. Feel free to check out the template of the list filter component at `app/templates/components/list-filter.hbs` to see which property you have to set!
 - This component needs to be dependent on the `selectedFilter` property to update correctly. You can set `selectedFilter` as a simple property for now and we will check out how to update the property later
