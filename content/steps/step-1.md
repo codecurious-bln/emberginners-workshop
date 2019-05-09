@@ -60,9 +60,27 @@ This line does 3 things:
 - It fills in the variable `color` with the word `purple`
 - It allows you to retrieve the word `purple` any time again in your code by reading from the variable `color`
 
-You can choose almost any word that comes to your mind, when naming a variable. It's also possible to include numbers in your variable name. And after a variable has been declared for the first time, you can update its value anytime further down in your code as follows:
+You can choose almost any word that comes to your mind, when naming a variable. It's also possible to include numbers in your variable name.
+
+After a variable has been declared, you can read its value by using its name further down your program:
+
 
 ```js
+let color = 'purple';
+
+// ...other code
+
+console.log(color);
+// => prints "purple" to your console
+```
+
+Also, after a variable has been declared for the first time, you can update its value anytime further down in your code as follows:
+
+```js
+let color = 'purple';
+
+// ...other code
+
 color = 'blue';
 ```
 
@@ -70,7 +88,8 @@ When **updating** an **already declared** variable, you **must not** use the var
 
 Besides that, we also see that each code instruction - a so-called _statement_ - ends with a semi-colon `;`. It acts as like a colon after a phrase indicating to the browser that a full code instruction ends right there.
 
-How can you retrieve the value of a particular variable? We will see how to do so in the next exercise.
+Note: In the examples above we're assigning a word, or a so-called _string_, to our variable `color`. A string describes a number of characters, either letters, numbers or special characters, which are _stringed_ together. A string always needs to be written in quotation marks - you are free to choose either single quotes `'` or double quotes `"`.
+
 
 #### Exercise 1c: Read and write to variables
 
@@ -78,5 +97,6 @@ How can you retrieve the value of a particular variable? We will see how to do s
 - Open the file `/demo-1c.html` in your text editor
 - Open the file in your browser as done in the previous exercise
 - Investigate the current `alert()` statement. What do you see?
-- Find out how to make your page alert the phrase `I learn all day`
-- Make your program alert `I learn all day` first and then alert `I program all day` second by using only one variable in your program
+- Open your browser console (as described in Exercise 1a). What does the error message tell you about what is happening on the website? Try clicking the link that is provided with the error message. What do you see?
+- Find out how to make your page alert the phrase `I learn all day` without changing the line with the `alert` statement
+- Make your program alert `I learn all day` first and then alert `I code all day` second by using only one variable in your program
