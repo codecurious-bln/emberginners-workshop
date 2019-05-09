@@ -32,7 +32,7 @@ If you're curious about what you can build with Ember, check out a few of the fo
 ![Linkedin EmberJS Showcase](/images/linkedin.png)
 
 - Showcase 2: [Trainline](https://trainline.fr)
-![Heroku EmberJS Showcase](/images/trainline.png)
+![Trainline EmberJS Showcase](/images/trainline.png)
 
 - Showcase 3: [Playstation Store](https://store.playstation.com/de-de/home/games)
 ![Playstation EmberJS Showcase](/images/ps.png)
