@@ -7,7 +7,7 @@ order: 1
 
 ## What is JavaScript used for?
 
-JavaScript is a programming language that empowers its users to build things on the web! What does building things on the web this specifically mean? To understand this better, let's take a look what a browser, a program like Chrome or Firefox, actually does:
+JavaScript is a programming language that empowers its users to build things on the web! What does building things on the web specifically mean? To understand this better, let's take a look what a browser, a program like Chrome or Firefox, actually does:
 
 ## What do Browsers Do?
 
