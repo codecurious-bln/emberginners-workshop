@@ -5,6 +5,20 @@ order: 1
 
 # An Intro to JavaScript
 
+## What is JavaScript used for?
+
+JavaScript is a programming language that empowers its users to build things on the web! What does building things on the web this specifically mean? To understand this better, let's take a look what a browser, a program like Chrome or Firefox, actually does:
+
+## What do Browsers Do?
+
+A web browser (commonly referred to as a browser) is a software application for accessing information on the World Wide Web. Each individual web page, image, and video is identified by a url (e.g. `http://www.simplabs.com`) enabling browsers to retrieve these resources from a web server and display them on the user's device - which is your computer or your smartphone.
+
+Your browser is an application that can parse - which means, read and interpret - information via different types of data formats stored in files. As a reference, your Microsoft Office or OpenOffice editor is an application that can parse information that is stored in the form of `.doc` or `odt` files. In a similar fashion, certain types of files can be parsed by browsers which are mostly `.html` (HTML), `.css` (CSS) and `.js` (JavaScript) files.
+
+In the scope of this workshop we won't be able to take a deeper look into the former two, HTML and CSS, themselves. If you want to learn more about them after the workshop, feel encouraged to learn more about them through web courses or user groups in your area.
+
+Instead we will focus on JavaScript and how we can use and create `.js` files, that can be run in the browser so that it will display our first web application that we're going to build today!
+
 ## What is JavaScript?
 
 JavaScript is a dynamic programming language that runs in the browser. This means that your browser (e.g. Chrome, Firefox, Internet Explorer) can not only read JavaScript files,
