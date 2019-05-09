@@ -31,8 +31,8 @@ If you're curious about what you can build with Ember, check out a few of the fo
 - Showcase 1: [Linkedin.com](https://www.linkedin.com/)
 ![Linkedin EmberJS Showcase](/images/linkedin.png)
 
-- Showcase 2: [Heroku Dashboard](https://dashboard.heroku.com/)
-![Heroku EmberJS Showcase](/images/heroku.png)
+- Showcase 2: [Trainline](https://trainline.fr)
+![Heroku EmberJS Showcase](/images/trainline.png)
 
 - Showcase 3: [Playstation Store](https://store.playstation.com/de-de/home/games)
 ![Playstation EmberJS Showcase](/images/ps.png)
