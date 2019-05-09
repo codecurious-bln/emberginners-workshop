@@ -140,11 +140,11 @@ if (/* something you want to check */) {
  Imagine if you wanted to print "Take your umbrella!" only when the weather was not good (`isWeatherGood = false`). You can then write:
 
 
- ```js
+```js
 if (!isWeatherGood) {
   console.log("Take your umbrella!");
 }
- ```
+```
 
 #### Exercise 5c: Print to the console under certain conditions
 

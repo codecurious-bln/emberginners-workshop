@@ -23,7 +23,7 @@ To create routes that can be accessed via certain urls, we use the Ember CLI and
 - In our app, a route is represented by a JavaScript file (`.js` file ending) and a template (`.hbs` file ending). Open the template `app/templates/about.hbs` in your text editor
 - Copy-paste the following into your template (`app/templates/about.hbs`)
 
-```hbs
+```html
 <div class="jumbo">
   <div class="right tomster"></div>
   <h2>About Super Rentals</h2>
@@ -68,7 +68,7 @@ In this exercise we'd like to 1. create a new page called `rentals` and 2. link 
 - Generate a new route called `rentals` in a similar way as you did in the previous exercise
 - Replace the content of the file `app/templates/rentals.hbs` with the following:
 
-```
+```html
 <div class="jumbo">
   <div class="right tomster"></div>
   <h2>Welcome!</h2>
