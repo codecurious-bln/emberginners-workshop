@@ -137,6 +137,8 @@ if (/* something you want to check */) {
 }
 ```
 
+If the variable or value is `true` in the check (between the `()` braces) then the code between the `{}` braces will execute.
+
  Imagine if you wanted to print "Take your umbrella!" only when the weather was not good (`isWeatherGood = false`). You can then write:
 
 
