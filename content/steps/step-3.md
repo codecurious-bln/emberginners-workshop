@@ -7,7 +7,7 @@ order: 3
 
 ## What is routing?
 
-Our application allows us to navigate to different parts of it via url. The url is the name of a sub page in our website, which we can type into the browser navigation bar to allow us to land on that part of our app. The url allows to access different `routes` of our Ember app.
+Our application allows us to navigate to different pages or so-called _routes_ of it via url. The url is the name of a sub page in our website, which we can type into the browser navigation bar to allow us to land on that part of our app. The url allows to access different `routes` of our Ember app.
 
 Routing in web applications is important, since it enables users to share a specific part of the app with others. E.g. if you want a friend to take a look at your super-rentals overview page, you can just send them the link (a.k.a url) that opens that part of the application.
 
@@ -84,10 +84,10 @@ In this exercise we'd like to 1. create a new page called `rentals` and 2. link 
 
 ## What are JavaScript objects?
 
-Objects in JavaScript are a special kind of data type. Each data type in JavaScript comes with its own characteristics in how you can store and access data. Data can come in many forms. E.g. the word 'tomster' in a JavaScript program can be a piece of data. If you wanted to use the word `tomster` in your JavaScript code, you'd need to do so using the `string` data type for example. The number 42 is of the `Number` data type.
+Objects in JavaScript are a piece of information that allows us to group related info together.
 
 
-In Ember most things that we work with revolve around objects though. An object is defined by having zero, one or several properties, where each property has a specified value. An object can look for example like this:
+In Ember most things that we work with revolve around objects. An object is defined by having zero, one or several _properties_, where each property has a specified value. An object can look for example like this:
 
 
 ```js
@@ -96,7 +96,7 @@ In Ember most things that we work with revolve around objects though. An object 
   birthyear: 1867 }
 ```
 
-The object allows us to store related information together one single piece of data. Similarly to Strings (words) and Numbers (numbers), objects can also be stored via variables. We can e.g. save the object above with the variable `scientist` as follows:
+The object allows us to store related information together one single piece of data. Similarly to Strings (words, e.g. 'pineapple') and Numbers (numbers, e.g. 42), objects can also be stored via variables. We can e.g. save the object above with the variable `scientist` as follows:
 
 
 ```js
@@ -128,7 +128,7 @@ console.log(scientist);
 
 ## What is an Ember Object?
 
-Objects in Ember are a specific type of object. They come with many different features that native JavaScript objects which we learned about in the previous section don't have. In the scope of this workshop we won't be able to cover the special things an EmberObject can do versus a normal object, but we want to take a look on how to create one and be able to recognize it later on in the course.
+EmberObjects are a specific type of object. They come with many different features that native JavaScript objects which we learned about in the previous section don't have. In the scope of this workshop we won't be able to cover the special things an EmberObject can do versus a normal object, but we want to take a look on how to create one and be able to recognize it later on in the course.
 
 Learning about the EmberObject is also important for knowing that almost everything we create in an Ember app is based on an EmberObject. We'll come back to that notion later during the course.
 
