@@ -7,7 +7,7 @@ order: 5
 
 ## What is a Component?
 
-A component is an EmberObject that can be used to display interactive content in your Ember application. Ember components are used to turn markup text and styles into reusable content. Components consist of two parts: a JavaScript component file that defines behavior, and its accompanying Handlebars template that defines the markup for the component's UI.
+A component is an EmberObject that can be used to display interactive content in your Ember application. Ember components are used to turn layout, styles and interactive elements into reusable content. Components consist of two parts: a JavaScript component file that defines behavior, and its accompanying Handlebars template that defines the layout of the component.
 
 
 ## Where Can I Find Components?
@@ -108,22 +108,52 @@ console.log(programmer.birthyear);
 // => 1817
 ```
 
-There's a special functionality you can use for flipping between a special kind of value: Booleans. Boolean values can only have one of two different states: `true` or `false`. To update Booleans, you can also use `.toggleProperty()` to change the value to the opposite.
+There's a special functionality you can use for flipping between a special kind of value: Booleans. Boolean values can only have one of two different values: `true` or `false`.
 
-```
-let programmer = EmberObject.create({
-  title: 'Ada Lovelace',
-  birthyear: 1815,
-  isScientist: true,
-});
-console.log(programmer.isScientist);
+We could e.g. create a variable that describes if the weather is good in our app as follows:
+
+```js
+let isWeatherGood = true;
+console.log(isWeatherGood);
 // => true
-
-programmer.toggleProperty('isScientist');
-console.log(programmer.isScientist);
+isWeatherGood = false;
 // => false
-
-programmer.toggleProperty('isScientist');
-console.log(programmer.isScientist);
-// => true
 ```
+
+In contrast to strings, you must not use quotation marks to add a boolean value to a variable in your program. Additionally, you can use the `!` operator in front of your value or variable to turn a boolean into its opposite value. Check it out:
+
+```js
+let isWeatherGood = true;
+console.log(!isWeatherGood);
+// => false
+```
+
+Finally, booleans are useful in your app when you want to check for a certain condition and execute code only if it's either true or false. Checks in your code can be made using the `if` operator. Put the variable or value you want to check into braces (`()`) right after the `if` operator and let it follow with curly braces `{}` to wrap the code you want to run. You can use it as follows:
+
+
+```js
+if (/* something you want to check */) {
+  // something you want to run in your program if the check is true
+}
+```
+
+If the variable or value is `true` in the check (between the `()` braces) then the code between the `{}` braces will execute.
+
+ Imagine if you wanted to print "Take your umbrella!" only when the weather was not good (`isWeatherGood = false`). You can then write:
+
+
+```js
+if (!isWeatherGood) {
+  console.log("Take your umbrella!");
+}
+```
+
+because we need the check to be `true` for the `console.log("Take your umbrella!")` to run we need to use the `!` operator. This way the check will only pass when the value of `isWeatherGood` is `false`
+ 
+#### Exercise 5c: Print to the console under certain conditions
+
+- Open the file [`/demos/demo-5c`](/demos/demo-5c.html) in your browser and in your editor
+- Open the browser console. What do you see?
+- Go back to the code example in your editor and inspect the JavaScript code. What do you see?
+- Update the code so that you will see "Time for a break" printed to your console
+- Refresh the page in the browser and check out the console. Did it work?

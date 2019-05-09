@@ -7,14 +7,14 @@ order: 6
 
 Actions are ways to make interactions of a user with your application trigger changes in your application's UI and they're especially useful for Components.
 
-So far, you've learned how parent components can accept properties by being set on themselves or being passed into them on a template, and how that component can use those properties from both JavaScript and its template.
+So far, you've learned how components can accept properties by being set on themselves or being passed into them on a template, and how that component can use those properties from both JavaScript and its template.
 
-But what about the opposite direction? How does data flow back out of the component to the parent? In Ember, components use actions to communicate events and changes. Technically, actions are functions in JavaScript. We'll see what functions are in the next section.
+But what about the opposite direction? How does data flow back out of a component to a container component? In Ember, components use actions to communicate events and changes. Technically, actions are functions in JavaScript. We'll see what functions are in the next section.
 
 
 ## Functions in JavaScript
 
-Functions are a reusable unit of one or several instructions in JavaScript. You can define a function using the `function` keyword, followed by a free name, e.g. `myFunction` and parentheses `()` and curly braces `{}` wrapping the instructions that should be part of the function. A function could look as follows:
+Functions are a reusable unit of one or several instructions in JavaScript. You can define a function using the `function` keyword, followed by a name that you can choose freely, e.g. `myFunction` and parentheses `()` and curly braces `{}` wrapping the instructions that should be part of the function. A function could look as follows:
 
 
 ```
