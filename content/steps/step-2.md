@@ -7,7 +7,7 @@ order: 2
 
 ## What is Ember?
 
-Ember or more specifically EmberJS (JS stands for **J** ava **S** cript) is a tool that helps you build entire websites using JavaScript. It itself is written in JavaScript and it provides different language patterns to you to make it more easy to manage your code and build your web app. It is also called a JavaScript **framework**, as it provides the foundation on which you can build up on your own program.
+Ember or more specifically EmberJS (JS stands for **J** ava **S** cript) is a tool that helps you build entire websites using JavaScript. It itself is written in JavaScript and it provides different language patterns to you to make it more easy to manage your code and build your web app. It is also called a JavaScript **framework**, as it provides the foundation on which you can build up your own program.
 
 
 Traditional websites from many years ago, used to be built on HTML and CSS only - two languages that have been used since the early days of the web. Many modern websites are mostly built based on JavaScript alone, using frameworks like EmberJS. JavaScript websites or so-called **web applications** gained popularity in the last years, since they can be viewed faster than traditional websites and using them feels more intuitive.
