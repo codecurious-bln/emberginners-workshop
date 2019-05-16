@@ -37,6 +37,65 @@ If you're curious about what you can build with Ember, check out a few of the fo
 - Showcase 3: [Playstation Store](https://store.playstation.com/de-de/home/games)
 ![Playstation EmberJS Showcase](/images/ps.png)
 
+## Getting setup
+
+ To be able to follow the workshop, we need to install several programs onto our computer and get familiar with a few.
+
+ ### Installation (Part 1)
+
+
+ #### Installing a text editor
+
+ To be able to write our first web application we need to install a text editor that allows us to edit our program. In the scope for this workshop we will use **Atom** which is a free text editor that's well suited for development, too. You can download and install it over [here](https://atom.io/).
+
+ #### Installing a browser
+
+ Several browsers provide us with tools that help us to develop our web application. In the scope of this workshop we'd like to use **Google Chrome**. If you haven't got it on your computer yet, you can download and install it over [here](https://www.google.com/chrome/).
+
+
+ ### Getting familiar with the terminal
+
+ A terminal is a program that allows you to run, stop and interact with programs on your computer using text-based commands. Other terms that are used to describe a terminal, are "console", "shell" or "command line".
+
+ #### Opening your terminal
+
+ You can open your terminal as follows:
+
+ * Mac: Hit Command + Space key and type "Terminal" and open it hitting enter
+* Linux (e.g. Ubuntu): Hit Control + Alt + T
+* Windows: Install and open the [Windows Subsystem for Linux for Windows 10](https://superuser.com/questions/608106/how-can-i-use-a-bash-like-shell-on-windows) or the [Cygwin tool set](https://www.cygwin.com/)
+
+ #### Starting + Stopping Processes
+
+ Each terminal window or terminal tab will open with a new line mentioning your username on your computer, your computer's name followed by an empty line:
+
+ ![Termimal Window](/images/terminal.png)
+
+
+ Any program that you run via the terminal can be stopped and re-run. To start a program or process you need to type in the respective command and hit enter, to stop a command use Ctrl + C.
+
+ Throughout this workshop we will mention several commands that you need to run in the terminal.
+
+ ##### Exercise: Start and Stop a Process
+
+ There is a program you can run to "knock on the door" of a website and check if it's currently online. The program is called **ping**. This program has a simple terminal command that you can use to run it, also called `ping` and it can be run in your terminal window by typing the following:
+
+ ```bash
+ping replace-this-with-the-url-of-a-website
+```
+
+ If we for example wanted to check the current status of the EmberJS website, we could run:
+
+ ```bash
+ping emberjs.com
+```
+Now, try it yourself:
+- "ping" a website of your choice via your terminal using the `ping` command
+- What do you see in the terminal window?
+- Stop the process by using the control mentioned earlier in this section
+
+ The `ping` command takes in a url which can be different anytime the program is run and is free to user choice. A text or number that is used in combination with a command is called a **parameter**. During the workshop we will learn about more commands that take in parameters for running their respective program.
+
 
 ##### Exercise: Navigate across directories
 
