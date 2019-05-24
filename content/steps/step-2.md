@@ -46,7 +46,7 @@ Here you can see all the files that make up the app. The Ember CLI created a new
 
 ## Setup your project for success
 
-We aleady created a demo application for you that you can refer back to if you ever get stuck on some of the following exercises and if you want to catch up. To be able to jump between exercises easily, please do the following while you're in your `super-rentals` directory:
+We aleady created a demo application for you that you can refer back to if you ever get stuck on some of the following exercises and you want to catch up. To be able to jump between exercises easily, please do the following while you're in your `super-rentals` directory:
 
 - Link your app on your computer to the demo app:
 
