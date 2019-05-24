@@ -14,7 +14,7 @@ A component is an EmberObject that can be used to display interactive content in
 
 Components that have been created as part of our application can be used in any page of our application. You can find components that are already part of this application by taking a look into the `app/components` folder. For example, you might see the following:
 
-```
+```bash
 - app
   |-- components
       |-- my-component.js
@@ -26,7 +26,7 @@ You can use a component by typing its name in [upper camel case](http://wiki.c2.
 We could add that component created in `app/components/my-component.js` to the rentals page as follows:
 
 
-```
+```html
 <!-- app/templates/rentals.hbs -->
 <MyComponent />
 ```
@@ -54,7 +54,7 @@ Regular properties can be defined on your component directly in two different wa
 
 - Setting a component property in its respective `.js` file. We can, for instance, set a title property on the following component as such:
 
-```
+```js
 // app/components/my-component.js
 import Component from '@ember/component';
 
@@ -66,7 +66,7 @@ This works exactly as we would expect when declaring a property on a regular Jav
 
 - Or by passing the property into the component right where it is invoked in a template:
 
-```
+```html
 <!-- app/templates/another-route.hbs -->
 <MyComponent @title="My new component" />
 
@@ -75,7 +75,7 @@ This works exactly as we would expect when declaring a property on a regular Jav
 Later on, this property is available in our component template at `app/templates/components/my-component.hbs` as such:
 
 
-```
+```html
 <!-- app/templates/components/my-component.hbs -->
 {{this.title}}
 ```
@@ -95,7 +95,7 @@ Once we invoke our component in a route and visit that route in our browser, we 
 Passing in a value at the invocation site of a component is not the only way to update component property values. You can also use `.set()` to change property values.
 
 
-```
+```js
 let programmer = EmberObject.create({
   title: 'Ada Lovelace',
   birthyear: 1815,
@@ -149,7 +149,7 @@ if (!isWeatherGood) {
 ```
 
 because we need the check to be `true` for the `console.log("Take your umbrella!")` to run we need to use the `!` operator. This way the check will only pass when the value of `isWeatherGood` is `false`
- 
+
 #### Exercise 5c: Print to the console under certain conditions
 
 - Open the file [`/demos/demo-5c`](/demos/demo-5c.html) in your browser and in your editor
