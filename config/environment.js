@@ -27,6 +27,10 @@ module.exports = function(environment) {
       title: 'Emberginners workshop',
       logo: '/images/logos/simplabs.svg',
       coverImage: '/images/intro-header.jpg'
+    },
+
+    showdown: {
+      openLinksInNewWindow: true
     }
   };
 
