@@ -43,3 +43,21 @@ In the following section you will learn about the [Ember CLI](https://cli.emberj
 ![Example Generate App](/images/ember_demo-2a.gif)
 
 Here you can see all the files that make up the app. The Ember CLI created a new folder for us, called  `app` which alredy contains actual app code and where we will add our own code to create our first web application. You can ignore all the other folders like `config/`, `node_modules/` or `vendor/` today. In the end Ember will build the app that runs in the browser out of all these files that you can see here.
+
+## Setup your project for success
+
+We aleady created a demo application for you that you can refer back to if you ever get stuck on some of the following exercises and if you want to catch up. To be able to jump between exercises easily, please do the following while you're in your `super-rentals` directory:
+
+- Link your app on your computer to the demo app:
+
+```
+git add upstream git@github.com:simplabs/emberginners-workshop-app.git
+```
+
+- Get all the exercise results from the demo app:
+
+```
+git fetch upstream
+```
+
+Now you're already good to go! We'll see how we can skip to an upcoming exercise later.
