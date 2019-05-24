@@ -6,8 +6,7 @@ This is a workshop to teach those who have never programmed before (or at least 
 
 ## How to follow the workshop
 
-This workshop and its materials are based on the workshop slides that you can find online at [#url-here](#url-here).
-You can follow the slides and go back to previous lessons at any time, either during or after the workshop.
+You can follow this website and go back to previous lessons at any time, either during or after the workshop.
 
 Do you have feedback or improvements for the workshop materials? Talk to us during the workshop and we'd be looking forward to incorporate your suggestion into the next edition of this project.
 

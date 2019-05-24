@@ -48,12 +48,12 @@ Instead, we will use a **tool** that is pre-installed for us in any browser to w
 #### Exercise 1b: Run JavaScript from a file
 
 - Open your text editor
-- Open the file `/demo-1b.html` in your text editor (TODO: lol, no one knows how file directories work, right)
+- Download and open the file <a href="/demos/demo-1b.html" download>demo-1b.html</a> in your text editor
 - Open the file in your browser (e.g. double-click on it in your file directory or in your editor menu)
 - Investigate the `<script type="text/javascript"></script>` section
 - Fill in a snippet of JavaScript code from the previous exercise into the snippet below the `// comment`
 - Reload the page in the browser. What do you see?
-- Trouble with the exercise? Open `/demo-1b-solution.html` in your editor and browser
+- Trouble with the exercise? Open <a href="/demos/demo-1b-solution.html" download>demo-1b-solution.html</a> in your editor and browser
 
 ## What are variables?
 
@@ -108,7 +108,7 @@ Note: In the examples above we're assigning a word, or a so-called _string_, to 
 #### Exercise 1c: Read and write to variables
 
 - Open your text editor
-- Open the file `/demo-1c.html` in your text editor
+- Open the file <a href="/demos/demo-1c.html" download>demo-1c.html</a> in your text editor
 - Open the file in your browser as done in the previous exercise
 - Investigate the current `alert()` statement. What do you see?
 - Open your browser console (as described in Exercise 1a). What does the error message tell you about what is happening on the website? Try clicking the link that is provided with the error message. What do you see?

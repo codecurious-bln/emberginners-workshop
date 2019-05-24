@@ -149,10 +149,10 @@ if (!isWeatherGood) {
 ```
 
 because we need the check to be `true` for the `console.log("Take your umbrella!")` to run we need to use the `!` operator. This way the check will only pass when the value of `isWeatherGood` is `false`
- 
+
 #### Exercise 5c: Print to the console under certain conditions
 
-- Open the file [`/demos/demo-5c`](/demos/demo-5c.html) in your browser and in your editor
+- Open the file <a href="/demos/demo-5c.html" download>demo-5c.html</a> in your browser and in your editor
 - Open the browser console. What do you see?
 - Go back to the code example in your editor and inspect the JavaScript code. What do you see?
 - Update the code so that you will see "Time for a break" printed to your console
