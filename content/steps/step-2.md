@@ -51,7 +51,7 @@ We aleady created a demo application for you that you can refer back to if you e
 - Link your app on your computer to the demo app:
 
 ```
-git add upstream git@github.com:simplabs/emberginners-workshop-app.git
+git remote add upstream git@github.com:simplabs/emberginners-workshop-app.git
 ```
 
 - Get all the exercise results from the demo app:
