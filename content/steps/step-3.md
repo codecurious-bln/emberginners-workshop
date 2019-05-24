@@ -135,7 +135,7 @@ Learning about the EmberObject is also important for knowing that almost everyth
 You can create an EmberObject as follows:
 
 
-```
+```js
 import EmberObject from '@ember/object';
 
 let programmer = EmberObject.create({
@@ -155,7 +155,7 @@ In this exercise we want to create a new EmberObject which can be used in the `r
 - inside of the `model() {}`, create the EmberObject with your application's name (you can choose one) as the object's `name` property and a descriptive text as the object's `text` property
 - indicate that you'd like to pass the object down to your route's template by using the `return` keyword. Example on using `return` with an example object `myobject`:
 
-```
+```js
 model() {
   let myobject = EmberObject.create({
     /* FILL IN YOUR PROPERTIES */

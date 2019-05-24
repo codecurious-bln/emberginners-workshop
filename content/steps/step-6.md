@@ -17,7 +17,7 @@ But what about the opposite direction? How does data flow back out of a componen
 Functions are a reusable unit of one or several instructions in JavaScript. You can define a function using the `function` keyword, followed by a name that you can choose freely, e.g. `myFunction` and parentheses `()` and curly braces `{}` wrapping the instructions that should be part of the function. A function could look as follows:
 
 
-```
+```js
 function myFunction() {
   alert('Hello World!');
   alert('Hello again!');
@@ -27,7 +27,7 @@ function myFunction() {
 You can call your defined function by using its name, followed by parentheses and the obligatory semi-colon:
 
 
-```
+```js
 myFunction();
 // => Hello World!
 // => Hello again!
@@ -38,7 +38,7 @@ What are functions good for? Functions help us to write less repeated code. In t
 Even better, we can make functions also change their behavior each time we call them in dependance of **parameters**. A parameter is any value, e.g. a word or a number or an object, that we pass into the function via its parentheses. Going back to the function definition, we can make the function aware, that it requires and uses parameters by including it in its function definition:
 
 
-```
+```js
 function myFunction(planet) {
   alert(`Hello ${planet}!`);
   alert(`Hello again!`);
@@ -47,7 +47,7 @@ function myFunction(planet) {
 
 and calling it with a specific value by passing the parameter into the function as follows:
 
-```
+```js
 myFunction("Saturn");
 // => Hello Saturn!
 // => Hello again!
@@ -66,7 +66,7 @@ In Ember, an action is special kind of function. An action can be bound to compo
 
 First, if there isn't one yet, you need to add an `actions` object - or a so-called `actions` _hash_ - to your component:
 
-```
+```js
 // app/components/my-component.js
 import Component from '@ember/component';
 
@@ -83,7 +83,7 @@ export default Component.extend({
 Next, you can define an action by adding a function with a specific name to that `actions` hash:
 
 
-```
+```js
 // app/components/my-component.js
 import Component from '@ember/component';
 
@@ -103,8 +103,8 @@ In this example we omitted the `function` keyword as we have defined it on an ob
 
 An action can be bound to any element or a component, e.g. a ready-to-use input component. We can write the following to bind the action defined in `my-component`:
 
-```
-<!-- app/templates/components/my-component.hbs
+```html
+<!-- app/templates/components/my-component.hbs -->
 <button onclick={{action "myFunction"}}>Click me</button>
 ```
 
