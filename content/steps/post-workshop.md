@@ -14,4 +14,6 @@ If you wanna learn more about Ember or JavaScript in general, be sure to check o
 - Learn more about Ember using [the official Guides](https://guides.emberjs.com/release/getting-started/quick-start/)
 - Join your [local Ember meetup group](https://www.meetup.com/Ember-js-Berlin/) and meet other Ember developers
 - Join a [local JavaScript learning group by OpenTechSchool Berlin](https://www.meetup.com/opentechschool-berlin/events/) or another programming group like [RailsGirls](http://railsgirls.com/berlin)
-- Join our [Emberginners Discord channel](#x) and stay in contact with other attendees
+
+
+And please fill in the [Feedback Form](https://airtable.com/shriuLKUoPrHpKije)
